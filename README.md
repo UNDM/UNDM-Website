@@ -1,34 +1,8 @@
-# Hydra
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0a8786f4-396b-4898-aabf-70c81c6c4324/deploy-status)](https://app.netlify.com/sites/huskerthon/deploys)
 
-Marketing site template for Jekyll. Browse through a [live demo](https://proud-alligator.cloudvent.net/).
-Increase the web presence of your brand with this configurable theme.
+# UNDM Website
 
-![Hydra template screenshot](images/_screenshot.png)
-
-Hydra was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
-
-## Features
-
-* Contact form
-* Pre-built pages
-* Pre-styled components
-* Blog with pagination
-* Post category pages
-* Disqus comments for posts
-* Staff and author system
-* Configurable footer
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
-
-## Setup
-
-1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics and Disqus keys to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+This is the new site for UNL Dance Marathon. This readme has information on the initial thoughts of the contents of the site and is meant to guide its development. 
 
 ## Develop
 
@@ -44,35 +18,67 @@ Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
 ~~~bash
 $ bundle exec jekyll serve
-~~~
 
-## Editing
+## Background
 
-Hydra is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in CloudCannon.
+### Personas
 
-### Posts
+These are the types of people we are making the site for
 
-* Add, update or remove a post in the *Posts* collection.
-* The **Staff Author** field links to members in the **Staff** collection.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
+- **Students**: Register to dance
+- **Individuals**: Donate
+- **Corporations**: Become a sponsor
+- **Families**: Get info to join
 
-### Contact Form
+### Why get involved?
 
-* Preconfigured to work with CloudCannon, but easily changed to another provider (e.g. [FormSpree](https://formspree.io/)).
-* Sends email to the address listed in company details.
+- The good we do: money raised, things built
+- The Kids
+- The Students
 
-### Staff
+## Site Design
 
-* Reused around the site to save multiple editing locations.
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
+### Requirements
 
-### Navigation
+Elements people have told us we need to have. 
 
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Navigation* section.
+- Kids Stories
+- Blog
+- Social Promotion
+- Staff Pages
+- Looks good on mobile
 
-### Footer
+### Long-shots 
 
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Footer* section.
+- Redesign to fit theme each year
+
+### Element Ideas
+
+- Countdown to event
+- Thank sponsors section
+- **Gotham Rounded** font
+- Kids Cards
+  - Card with picture of kids and link to their story
+  - Scattered across homepage
+  - Randomized from a special blogpost type each time
+
+### Pages
+
+- Home
+  - Header
+    - Video Paralax BG
+    - Color Overlay
+    - Get involved section
+    - "We dance to help those who cant"
+  - What is DM
+  - Countdown 
+  - Kids
+  - Stats
+  - Recent Posts
+  - Sponsors
+- Blog
+- Dance
+- Donate
+- Families
+- Corporate
+- Where the money goes
