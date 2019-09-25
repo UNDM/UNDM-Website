@@ -63,6 +63,10 @@ description: Track and optimize your sales team in real time
 	
 	<section>
 		<!-- @HUNTER: Put sponsors block here and test on mobile -->
+		{% for sponsor in site.data.sponsors %}
+			<li><a href={{sponsor.link}}>{{ sponsor.name }}</a></li>
+			<img src="{{ sponsor.image }}" style="height: 30px">
+		{% endfor %}
 	</section>
 
 	<section class="testimonial">
