@@ -33,6 +33,10 @@ paginate: 10
 paginate_path: "/blog/:num/"
 permalink: pretty
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 defaults:
   -
     scope:
@@ -79,6 +83,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-autoprefixer
 
 exclude:
   - Gemfile

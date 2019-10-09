@@ -1,3 +1,27 @@
+.video-container {
+	position: relative;
+}
+
+.video-container video {
+	height: auto;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.overlay {
+	background: rgba(227, 25, 55, 0.591);
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.overlay h1 {
+	color: white;
+}
+
 .bottom-cta {
 	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%);
 	color: #fff;
