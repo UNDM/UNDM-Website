@@ -80,6 +80,3 @@ DEPENDENCIES
   jekyll-seo-tag (= 2.4.0)
   jekyll-sitemap (= 1.2.0)
   mini_racer
-
-BUNDLED WITH
-   2.0.2
