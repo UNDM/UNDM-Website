@@ -2,7 +2,10 @@
 ---
 @import "mixins/flexbox";
 @import "mixins/columns";
+
 @import "variables";
+
+
 @import "elements";
 @import "landing-page";
 @import "layout";
@@ -14,3 +17,4 @@
 @import "navigation";
 @import "footer";
 @import "cloudcannon";
+@import "bootstrap";
