@@ -12,15 +12,23 @@ description: Track and optimize your sales team in real time
 	</video>
 	<div class="overlay">
 		<h1>we dance to help those who can't</h1>
-		<button type="button" class="btn btn-default">Get Involved</button>
+		<a class="btn btn-default" href="https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=3442"
+			role="button" target="_blank">Get Involved</a>
 	</div>
 </div>
 
 <div class="content">
-
-	<section>
-		<!-- @CAITLIN: put what is dm section here -->
-		<!-- Try to use flex containers like the sections below so it is responsive -->
+	<section class="what-is-dm">
+		<h1>What is Dance Marathon?</h1>
+		<p>Dance Marathon is a student organization that raises money each year for Children’s Miracle Network Hospitals. Our
+			local Miracle Hospital is Children’s Hospital & Medical Center in Omaha. Over the last decade, we have raised
+			more than $1 million for the kids!</p>
+		<h2>Some Stats</h2>
+		<ul>
+			<li>We raised a lot of money</li>
+			<li>This many dancers</li>
+			<li>Another stat</li>
+		</ul>
 	</section>
 
 	<section class="bottom-cta">
@@ -47,7 +55,7 @@ description: Track and optimize your sales team in real time
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 		
 				// Display the result in the element with id="demo"
-				document.getElementById("demo").innerHTML = "Countdown to Huskerthon:<br>" + days + "d " + hours + "h "
+				document.getElementById("demo").innerHTML = "Countdown to Huskerthon 2020:<br>" + days + "d " + hours + "h "
 				+ minutes + "m " + seconds + "s ";
 		
 				// If the count down is finished, write some text
@@ -63,13 +71,33 @@ description: Track and optimize your sales team in real time
 			</script>
 		</div>
 	</section>
+
+	<section class="what-is-dm">
+		<h1>For the Kids #FTK</h1>
+		<p>Children's Miracle Network Dance Marathon was founded by students in 1991 in the memory of Ryan White. Since its
+			inception, it has grown to over 100 universities and colleges across the country. All entirely student-run, all
+			donating 100% of the funds they raise directly to their local children's hospital, Dance Marathons have become a
+			tradition on campus and in the community. Year in and year out- students throw the biggest party of the year for
+			the children at their local hospital. They stay on their feet for 12, 24, or even 48 hours in honor of children
+			who have been through so much. They dance for those who can't. They do it For the Kids!</p>
+	</section>
 	
-	<section>
+	<section class="posts">
 		<h1>Recent Posts</h1>
+		<div class="post-container">
+		{% for post in site.posts limit:3%}
+			<div class="post">
+				<a href="{{ post.url }}">
+					<h3>{{ post.title }}</h3>
+					<p>{{ post.excerpt | strip_html | strip_newlines | truncate: 100 }}</p>
+				</a>
+			</div>
+		{% endfor %}
+		</div>
 	</section>
 
-	<section class="bottom-cta">
-		<h2 class="editable">Thank you to our sponsors!</h2>
+	<section class="sponsors">
+		<h2>Thank you to our sponsors!</h2>
 		<div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 150px">
 			<div class="carousel-inner">
 				{% for sponsor in site.data.sponsors %}

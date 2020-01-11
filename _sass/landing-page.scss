@@ -8,6 +8,14 @@
 	width: 100%;
 }
 
+.video-container h1 {
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 .overlay {
 	background: rgba(227, 25, 55, 0.591);
 	position: absolute;
@@ -22,6 +30,12 @@
 	color: white;
 }
 
+.what-is-dm {
+	padding: 50px;
+	max-width: 800px;
+	margin: auto;
+}
+
 .bottom-cta {
 	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%);
 	color: #fff;
@@ -31,6 +45,37 @@
 
 	h2 {
 		margin-bottom: 50px;
+	}
+}
+
+.sponsors {
+	text-align: center;
+}
+
+.sponsors h2 {
+	margin-bottom: 30px;
+}
+
+.posts {
+	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%);
+	color: white;
+	text-align: center;
+	padding: 50px;
+
+	.post {
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		background-color: white;
+		width: fit-content;
+		text-decoration: none;
+	}
+
+	a {
+		color: red;
 	}
 }
 
