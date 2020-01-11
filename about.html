@@ -4,8 +4,8 @@ description:
 ---
 <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
 <ul class="staff">
-	{% assign sorted_staff = site.staff_members | sort:'order' %}
-	{% for person in sorted_staff | sort: 'position' %}
+	{% assign sorted_staff = site.staff_members | sort: "order" %}
+	{% for person in sorted_staff %}
 		<li>
 			<div class="exec-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
 			<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter }}">{{ person.name }}</a></div>
