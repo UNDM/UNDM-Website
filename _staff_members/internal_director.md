@@ -1,6 +1,6 @@
 ---
-name: Tori Oestmann
+name: Riley Young
 position: Internal Director
-image_path: ../images/exec/tori.jpg
+image_path: ../images/exec2/riley.jpg
 order: 3
 ---

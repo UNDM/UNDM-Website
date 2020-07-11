@@ -1,6 +1,6 @@
 ---
-name: Jared Tommeraasen
+name: Ethan Carlson
 position: Recruitment
-image_path: ../images/exec/jared.jpg
+image_path: ../images/exec2/ethan.jpg
 order: 4
 ---
