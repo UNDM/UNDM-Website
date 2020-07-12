@@ -1,6 +1,6 @@
 ---
 name: Corrie Day
 position: Fundraising
-image_path: ../images/exec2/corrie.jpg
+image_path: ../images/exec/corrie.jpg
 order: 10
 ---

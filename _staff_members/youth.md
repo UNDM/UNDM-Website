@@ -1,6 +1,6 @@
 ---
 name: Taylor Rambo
 position: Youth
-image_path: ../images/exec2/taylor.jpg
+image_path: ../images/exec/taylor.jpg
 order: 17
 ---

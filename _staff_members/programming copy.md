@@ -1,6 +1,6 @@
 ---
 name: Grace Heggem
 position: Programming
-image_path: ../images/exec2/peyton.jpg
+image_path: ../images/exec/grace.jpg
 order: 8
 ---

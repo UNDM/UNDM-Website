@@ -1,7 +1,7 @@
 ---
 name: Hayden Barrows
 position: Event Operations
-image_path: ../images/exec2/hayden.jpg
+image_path: ../images/exec/hayden.jpg
 order: 5
 ---
 

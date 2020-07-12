@@ -1,6 +1,6 @@
 ---
 name: Caitlin McCarthy
 position: Technology
-image_path: ../images/exec2/caitlin.jpg
+image_path: ../images/exec/caitlin.jpg
 order: 16
 ---
