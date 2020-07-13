@@ -1,6 +1,73 @@
 //will add styling here.
 
-.yellow-drop {
-    background: rgb(255, 208, 0);
-    
+@media #{$desktop} {
+	.flex {
+		@include flexbox;
+		align-items: center;
+		flex-direction: row;
+
+		.text, .image {
+			-webkit-flex: 1;
+			flex: 1;
+			padding: 0 20px;
+		}
+	}
+
+	.content section:nth-child(even) .flex {
+		flex-direction: row-reverse;
+	}
 }
+
+.content {
+    padding: 1px 0 0 0;
+}
+
+.card-title {
+    color: rgb(198, 31, 74); padding-top: 30%;
+  }
+  
+ .sponsor {
+    width: 20rem; 
+    height: 20rem; 
+    margin-top: 5%;
+    border: 8px solid rgb(198, 31, 74)!important;
+  }
+
+  .sponsor-style {
+    text-align: center; background: rgba(198, 31, 74, .5); 
+  }
+  .level-design {
+    background-color: rgb(255, 188, 64)!important; 
+    margin-left: 20%!important; 
+    margin-right: 20%!important;
+  }
+  
+  .middle {
+    transition: 0.4s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .card-body:hover .card-title {
+    transition-duration: 1s;
+    opacity: 0.2;
+  }
+  
+  .card-body:hover .middle {
+    transition-duration: 1s;
+    opacity: 1;
+  }
+  
+  .title {
+    background: rgb(150, 149, 147); margin: 0; padding: 50px 0; width: 100%;
+  }
+  
+  .font {
+    font-family: sans-serif;
+    
+  }
