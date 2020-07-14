@@ -111,6 +111,12 @@
 	}
 }
 
+.row-rectangle {
+	background-color: #E13835;
+	padding-top: 20px;
+	width: 12px;
+	border-radius: 3px;
+}
 
 @media #{$desktop} {
 	.flex {
