@@ -1,6 +1,6 @@
 ---
-name: Jacob Peddicord
+name: Caitlin McCarthy
 position: Technology
-image_path: ../images/exec/jacob.jpg
-order: 12
+image_path: ../images/exec/caitlin.jpg
+order: 16
 ---

@@ -1,6 +1,6 @@
 ---
-name: Madeline Mohatt
+name: Peyton Bash
 position: Executive Director
-image_path: ../images/exec/madeline.jpg
+image_path: ../images/exec/peyton.jpg
 order: 1
 ---

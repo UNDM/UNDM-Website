@@ -1,6 +1,6 @@
 ---
-name: Sami Martens
+name: Grant Holst
 position: Family Relations
-image_path: ../images/exec/sami.jpg
+image_path: ../images/exec/grant.jpg
 order: 6
 ---
