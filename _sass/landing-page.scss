@@ -111,6 +111,18 @@
 	}
 }
 
+.row-rectangle {
+	background-color: #E13835;
+	padding-top: 20px;
+	width: 12px;
+	border-radius: 3px;
+}
+
+@media #{$tablet} {
+	.row-rectangle {
+		visibility: hidden;
+	}
+}
 
 @media #{$desktop} {
 	.flex {
@@ -128,4 +140,14 @@
 	.content section:nth-child(even) .flex {
 		flex-direction: row-reverse;
 	}
+
+	.row-rectangle {
+		background-color: #E13835;
+		padding-top: 20px;
+		width: 12px;
+		border-radius: 3px;
+		visibility: visible;
+	}
 }
+
+
