@@ -1,0 +1,131 @@
+.ways-to-sponsor {
+  padding-top: 5%;
+  padding-bottom: 0px;
+}
+.title {
+  background: rgb(150, 149, 147); 
+  margin: 0; 
+  padding: 20px 0; 
+  width: 100%;
+
+  h2 {
+    color: white;
+    text-align: center
+  }
+}
+
+.card-body {
+  .layer-1 {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .layer-2 {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .main {
+    transition-duration: .7s;
+    opacity: 1;
+    color: rgb(198, 31, 74);
+  }
+  
+  .secondary { 
+    transition-duration: .7s; 
+    opacity: 0; } 
+}
+
+.dropdown {
+  background: white
+}
+ 
+.card-body:hover {
+  .layer-1 {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .layer-2 {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .main { 
+    transition-duration: .7s; 
+    opacity: 0.2;
+  }
+  .secondary { 
+    transition-duration: .7s; 
+    opacity: 1;
+  }
+}
+  
+ .sponsor {
+    width: 25rem; 
+    height: 25rem; 
+    margin-top: 5%;
+    border: 8px solid rgb(198, 31, 74)!important;
+    overflow-y: auto;
+  }
+
+  .sponsor-style {
+    text-align: center; background: rgba(198, 31, 74, .5); 
+  }
+
+  .level-design {
+    background-color: rgb(255, 188, 64); 
+    margin-left: 25%; 
+    margin-right: 25%;
+
+    h3 {
+      text-align: center;
+      margin: 0;
+    }
+
+    h3 .title {
+      color: black;
+    }
+
+    h3 .money {
+      color: rgb(173, 38, 117);
+    }
+  }
+
+  .level-section {
+    background: rgba(255, 188, 64, .5); margin: 0; padding-top: 3%
+  }
+
+  .sponsor-section {
+    text-align: center; background: rgba(198, 31, 74, .5); margin: 0; padding: 70px
+  }
+
+  .card-header {
+    border-radius: 40%!important;
+    background: white;
+    margin: 3%;
+
+    .black {
+      color: black;
+    }
+  
+    .pink {
+      color: rgb(173, 38, 117);
+    }
+  }
+
+  
+
+  
