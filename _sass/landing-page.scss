@@ -118,6 +118,12 @@
 	border-radius: 3px;
 }
 
+.involvement-roles {
+	padding: 50px;
+	max-width: 800px;
+	margin: auto;
+}
+
 @media #{$tablet} {
 	.row-rectangle {
 		visibility: hidden;
