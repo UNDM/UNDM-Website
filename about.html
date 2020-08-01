@@ -1,5 +1,5 @@
 ---
-title: Executive Team
+title: Meet the Executive Team!
 description: 
 ---
 <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
@@ -8,11 +8,12 @@ description:
 	{% for person in sorted_staff %}
 		<li>
 			<div class="exec-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
-			<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter }}">{{ person.name }}</a></div>
+			<div class="name">{{ person.name }}</div>
 			<div class="position">{{ person.position }}</div>
 		</li>
 	{% endfor %}
 </ul>
 <!-- We will take out the not pictured part when we get a picture of Kiara -->
-<p>Not Pictured: <a target="_blank" href="https://twitter.com/{{ person.twitter }}">Kiara Kearney</a> (Special Events)</p>
+<p>Not Pictured: Kiara Kearney (Special Events)</p>
+
 
