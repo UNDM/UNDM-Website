@@ -112,10 +112,16 @@
 }
 
 .row-rectangle {
-	background-color: #E13835;
+	background-color: $brand-color;
 	padding-top: 20px;
 	width: 12px;
 	border-radius: 3px;
+}
+
+.involvement-roles {
+	padding: 50px;
+	max-width: 800px;
+	margin: auto;
 }
 
 @media #{$tablet} {
@@ -142,7 +148,7 @@
 	}
 
 	.row-rectangle {
-		background-color: #E13835;
+		background-color: $brand-color;
 		padding-top: 20px;
 		width: 12px;
 		border-radius: 3px;
