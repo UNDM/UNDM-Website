@@ -95,11 +95,33 @@ description: Track and optimize your sales team in real time
 		<hr/>
 		<!-- Involvement roles rows - end -->
 	</section>
-
+	
 	<section class="bottom-cta">
+		<h1 id="demo"></h1>
+		<h1>Countdown to Huskerthon 2020</h1>
+		<h1></h1>
+		<div class="container">
+		<div class="card-deck">
+			  <div class="card">
+				<p class="card-text">DAYS</p>
+				<p class="card-text2" id="days"></p>
+			  </div>
+			  <div class="card">
+				<p class="card-text">HOURS</p>
+				<p class="card-text2" id="hours"></p>
+			  </div>
+			  <div class="card">
+				<p class="card-text">MINUTES</p>
+				<p class="card-text2" id="minutes"></p>
+			  </div>
+				<div class="card">
+				  <p class="card-text">SECONDS</p>
+				  <p class="card-text2" id="seconds"></p>
+				</div>
+		</div>	
+	   </div>
 		<div>
-			<h1 id="demo"></h1>
-			<h1 id="countdown"></h1>
+			
 
 			<script>
 				// Set the date we're counting down to
@@ -121,8 +143,11 @@ description: Track and optimize your sales team in real time
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 				// Display the result in the element with id="demo"
-				document.getElementById("countdown").innerHTML = "Countdown to Huskerthon 2020<br>" + days + "d " + hours + "h "
-				+ minutes + "m " + seconds + "s ";
+				document.getElementById("days").innerHTML = days;
+				document.getElementById("hours").innerHTML = hours;
+				document.getElementById("minutes").innerHTML = minutes;
+				document.getElementById("seconds").innerHTML = seconds
+			    
 
 				// If the count down is finished, write some text
 				if (distance < 0 && distance > (-1000 * 60 * 60 * 12)) {

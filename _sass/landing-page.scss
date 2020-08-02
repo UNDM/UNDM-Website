@@ -48,6 +48,25 @@
 	}
 }
 
+.card {
+	background-color: white;
+	padding: 2rem;
+	text-align: center;
+	
+	.card-text {
+		color: rgb(34, 27, 29);
+		font-style: normal;
+		font-weight: bold;
+	}
+	.card-text2 {
+		color: rgb(255, 188, 64);
+		font-style: normal;
+		font-size: 300%;
+	}
+	
+	
+}
+
 .sponsors {
 	text-align: center;
 }
