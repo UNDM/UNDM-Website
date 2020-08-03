@@ -1,12 +1,84 @@
 ---
-title: Meet the Executive Team!
+title: Involvement Roles
 description: 
 ---
-<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
+
+<div class="involvement-roles">
+	<!-- Involvement roles rows - start -->
+	<p class="text-center">Dance Marathon has many different levels of involvement, but all are greatly integrated and necessary for our success.</p>
+	<hr />
+	<div class="row fade-item">
+		<div class="row-rectangle fade-item"></div>
+		<div class="col-sm-3 m-auto text-center">
+			<h2>Executive<br>Team</h2>
+		</div>
+		<div class="col m-auto">
+			<p>The executive team is made up of 21 directors in charge of their respective committees within the
+				organization.
+				These individuals make decisions that enhance all aspects of our mission, from recruitment to event
+				operations.</p>
+		</div>
+	</div>
+	<hr />
+	<div class="row fade-item">
+		<div class="row-rectangle fade-item"></div>
+		<div class="col-sm-3 m-auto text-center">
+			<h2>Staff</h2>
+		</div>
+		<div class="col">
+			<p>Staff make up each committee and complete various tasks that aid in efforts completed leading up to the
+				event.
+				They staff booths and various events held on campus throughout the year, as well as assisting in
+				accomplishing their committee’s goals to improve DM.</p>
+		</div>
+	</div>
+	<hr />
+	<div class="row fade-item">
+		<div class="row-rectangle fade-item"></div>
+		<div class="col-sm-3 m-auto text-center">
+			<h2>Morale<br>Captains</h2>
+		</div>
+		<div class="col m-auto">
+			<p>Morale Captains act as the liaisons between Dance Marathon and Team Captains of other organizations on
+				campus
+				that support our mission.
+				This group is known to set an enthusiastic tone at Huskerthon and boost morale throughout the event.</p>
+		</div>
+	</div>
+	<hr />
+	<div class="row fade-item">
+		<div class="row-rectangle fade-item"></div>
+		<div class="col-sm-3 m-auto text-center">
+			<h2>Dancers</h2>
+		</div>
+		<div class="col m-auto">
+			<p>Dancers are students throughout campus that have raised $100 throughout the year
+				and come together the day of the event to help celebrate the year’s accomplishments.</p>
+		</div>
+	</div>
+	<hr />
+	<div class="row fade-item">
+		<div class="row-rectangle fade-item"></div>
+		<div class="col-sm-3 m-auto text-center">
+			<h2>Donors</h2>
+		</div>
+		<div class="col m-auto">
+			<p>Lastly, donors are individuals that have supported our organization’s goal to raise money for Children’s
+				Hospital in Omaha.
+				All roles allow us to succeed in our goals of fundraising and building relationships throughout our
+				community.</p>
+		</div>
+	</div>
+	<hr />
+</div>
+<!-- Involvement roles rows - end -->
+<h2>Executive Team</h2>
+<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/"
+		class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
 <ul class="staff">
 	{% assign sorted_staff = site.staff_members | sort: "order" %}
 	{% for person in sorted_staff %}
-		<li>
+		<li class="fade-item">
 			<div class="exec-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
 			<div class="name">{{ person.name }}</div>
 			<div class="position">{{ person.position }}</div>
@@ -15,5 +87,3 @@ description:
 </ul>
 <!-- We will take out the not pictured part when we get a picture of Kiara -->
 <p>Not Pictured: Kiara Kearney (Special Events)</p>
-
-

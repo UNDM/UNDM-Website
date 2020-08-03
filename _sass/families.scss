@@ -14,21 +14,6 @@
 }
 
 .family-cards {
-    .star {
-        visibility: hidden;
-    }
-    
-    .fadeIn {
-        -webkit-animation: animat_show 0.8s;
-        animation: animat_show 0.8s;
-        visibility: visible !important;
-    }
-    
-    @-webkit-keyframes animat_show{
-        0%{opacity:0}
-        100%{opacity:1}
-    }
-    
     .family-card-separator {
         height: 50px;
         visibility: hidden;
