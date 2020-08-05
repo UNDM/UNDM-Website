@@ -11,70 +11,109 @@
   }
 }
 
-.column {
-  width: 49%
-}
 
 .card-body {
+  align-items: center; display: flex;
   
   .layer-1 {
     position: absolute;
     z-index: 1;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align: center;
+    // top: 50%;
+    // -ms-transform: translateY(-50%);
+    // transform: translateY(-50%);
+    text-align: center!important;
+    margin-right: 4%;
+  }
+
+  .layer-2 {
+    position: absolute;
+    z-index: 2;
+    // top: 50%;
+    // -ms-transform: translateY(-50%);
+    // transform: translateY(-50%);
+    // text-align: center!important;
+    margin-right: 4%;
   }
 
   .main {
     transition-duration: .7s;
     opacity: 1;
-    color: white;
+    color: black;
+    text-align: center;
   }
   
   .secondary { 
     transition-duration: .7s; 
     opacity: 0;
-    color: white; 
+    color: black; 
+    text-align: center;
   } 
 }
 
 .dropdown {
   background: white
 }
- 
+
+
 .card-body:hover {
+  align-items: center; display: flex;
 
   .layer-1 {
     position: absolute;
     z-index: 1;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align: center;
+    // top: 50%;
+    // -ms-transform: translateY(-50%);
+    // transform: translateY(-50%);
+    text-align: center!important;
+    margin-right: 4%;
+  }
+
+  .layer-2 {
+    position: absolute;
+    z-index: 2;
+    // top: 50%;
+    // -ms-transform: translateY(-50%);
+    // transform: translateY(-50%);
+    // text-align: center!important;
+    margin-right: 4%;
   }
 
   .main { 
     transition-duration: .7s; 
     opacity: 0.2;
+    text-align: center;
   }
   .secondary { 
     transition-duration: .7s; 
     opacity: 1;
+    text-align: center;
   }
+}
+
+.wrapper {
+  margin-bottom: 10%;
+}
+
+.spacing {
+  margin-top: 5%;
+}
+
+.row {
+  margin-bottom: 3%
 }
   
  .sponsor {
-    height: 17rem; 
-    width: 17rem; 
+    height: 23rem; 
+    width: 23rem; 
     margin-top: 5%;
-    background-color: rgb(198, 31, 74)!important;
+    background-color: #D3D3D3!important;
+    border: 6px solid #db3333;
     overflow-y: auto;
   }
-  
 
   .level-design {
     background-color: rgb(255, 188, 64); 
+    
     
     h3 {
       text-align: center;
@@ -90,7 +129,7 @@
   .card-header {
     border-radius: 40%!important;
     background: white;
-    margin: 2%;
+    margin: 3%;
 
     .black {
       color: black;
@@ -109,7 +148,7 @@
     p {
         text-align: center;
     }
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
   .sponsor-grid {
@@ -118,15 +157,14 @@
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        border: 3px solid #db3333;
         border-collapse: collapse;
+
         tr{
-            border: 3px solid #db3333;
             border-collapse: collapse;
         }
         td {
-            border: 3px solid #db3333;
             border-collapse: collapse;
+            padding: 4%;
         }
     }
     
