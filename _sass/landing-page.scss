@@ -17,7 +17,7 @@
 }
 
 .overlay {
-	background: rgba(227, 25, 55, 0.591);
+	background: rgba(198, 31, 74, 0.591);
 	position: absolute;
 	top: 0; right: 0; bottom: 0; left: 0;
 	display: flex;
@@ -48,6 +48,25 @@
 	}
 }
 
+.card {
+	background-color: white;
+	padding: 2rem;
+	text-align: center;
+	border-radius: 5px;
+	.card-text {
+		color: rgb(34, 27, 29);
+		font-style: normal;
+		font-weight: bold;
+	}
+	.card-text2 {
+		color: rgb(255, 188, 64);
+		font-style: normal;
+		font-size: 300%;
+	}
+	
+	
+}
+
 .sponsors {
 	text-align: center;
 }
@@ -75,7 +94,7 @@
 	}
 
 	a {
-		color: red;
+		color: #d00000;
 	}
 }
 
@@ -112,10 +131,16 @@
 }
 
 .row-rectangle {
-	background-color: #E13835;
+	background-color: $brand-color;
 	padding-top: 20px;
 	width: 12px;
 	border-radius: 3px;
+}
+
+.involvement-roles {
+	padding: 50px;
+	max-width: 800px;
+	margin: auto;
 }
 
 @media #{$tablet} {
@@ -142,7 +167,7 @@
 	}
 
 	.row-rectangle {
-		background-color: #E13835;
+		background-color: $brand-color;
 		padding-top: 20px;
 		width: 12px;
 		border-radius: 3px;

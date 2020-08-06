@@ -10,9 +10,9 @@ description: Track and optimize your sales team in real time
 			<source src="videos/dm.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 	</video>
-	<div class="overlay">
+	<div class="overlay fade-item">
 		<h1>we dance to help those who can't</h1>
-		<a class="btn btn-default" href="https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=3442"
+		<a class="btn btn-default" href="https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=3976"
 			role="button" target="_blank">Get Involved</a>
 	</div>
 </div>
@@ -28,78 +28,34 @@ description: Track and optimize your sales team in real time
 			 have raised and dance the night away. We integrate dancing, live acts such as a children’s talent show, crafts and
 			 activities for all ages, and even shaving heads for the kids to give families and children affected to have a day
 			 without the worries associated with their numerous stays in the hospital.</p>
-		<h2>Some Stats</h2>
-		<ul>
-			<li>We raised a lot of money</li>
-			<li>This many dancers</li>
-			<li>Another stat</li>
-		</ul>
-		<h2>Involvement Roles</h2>
-		<p>Dance Marathon has many different levels of involvement, but all are greatly integrated and necessary for our success. </p>
-		<!-- Involvement roles rows - start -->
-		<hr/>
-		<div class="row">
-			<div class="row-rectangle"></div>
-			<div class="col-sm-3 m-auto text-center">
-				<h2>Executive<br>Team</h2>
-			</div>
-			<div class="col m-auto" >
-				<p>The executive team is made up of 21 directors in charge of their respective committees within the organization.  
-					These individuals make decisions that enhance all aspects of our mission, from recruitment to event operations.</p>
-			</div>
-		</div>
-		<hr/>
-		<div class="row">
-			<div class="row-rectangle"></div>
-			<div class="col-sm-3 m-auto text-center">
-				<h2>Staff</h2>
-			</div>
-			<div class="col" >
-				<p>Staff make up each committee and complete various tasks that aid in efforts completed leading up to the event.  
-					They staff booths and various events held on campus throughout the year, as well as assisting in accomplishing their committee’s goals to improve DM.</p>
-			</div>
-		</div>
-		<hr/>
-		<div class="row">
-			<div class="row-rectangle"></div>
-			<div class="col-sm-3 m-auto text-center">
-				<h2>Morale<br>Captains</h2>
-			</div>
-			<div class="col m-auto" >
-				<p>Morale Captains act as the liaisons between Dance Marathon and Team Captains of other organizations on campus that support our mission.  
-					This group is known to set an enthusiastic tone at Huskerthon and boost morale throughout the event.</p>
-			</div>
-		</div>
-		<hr/>
-		<div class="row">
-			<div class="row-rectangle"></div>
-			<div class="col-sm-3 m-auto text-center">
-				<h2>Dancers</h2>
-			</div>
-			<div class="col m-auto" >
-				<p>Dancers are students throughout campus that have raised $100 throughout the year 
-					and come together the day of the event to help celebrate the year’s accomplishments.</p>
-			</div>
-		</div>
-		<hr/>
-		<div class="row">
-			<div class="row-rectangle"></div>
-			<div class="col-sm-3 m-auto text-center">
-				<h2>Donors</h2>
-			</div>
-			<div class="col m-auto" >
-				<p>Lastly, donors are individuals that have supported our organization’s goal to raise money for Children’s Hospital in Omaha.  
-					All roles allow us to succeed in our goals of fundraising and building relationships throughout our community.</p>
-			</div>
-		</div>
-		<hr/>
-		<!-- Involvement roles rows - end -->
 	</section>
-
+	
 	<section class="bottom-cta">
+		<h1 id="demo"></h1>
+		<h1>Countdown to Huskerthon 2020</h1>
+		<h1></h1>
+		<div class="container">
+		<div class="card-deck">
+			  <div class="card">
+				<p class="card-text">DAYS</p>
+				<p class="card-text2" id="days"></p>
+			  </div>
+			  <div class="card">
+				<p class="card-text">HOURS</p>
+				<p class="card-text2" id="hours"></p>
+			  </div>
+			  <div class="card">
+				<p class="card-text">MINUTES</p>
+				<p class="card-text2" id="minutes"></p>
+			  </div>
+				<div class="card">
+				  <p class="card-text">SECONDS</p>
+				  <p class="card-text2" id="seconds"></p>
+				</div>
+		</div>	
+	   </div>
 		<div>
-			<h1 id="demo"></h1>
-			<h1 id="countdown"></h1>
+			
 
 			<script>
 				// Set the date we're counting down to
@@ -121,8 +77,11 @@ description: Track and optimize your sales team in real time
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 				// Display the result in the element with id="demo"
-				document.getElementById("countdown").innerHTML = "Countdown to Huskerthon 2020<br>" + days + "d " + hours + "h "
-				+ minutes + "m " + seconds + "s ";
+
+				document.getElementById("days").innerHTML = days;
+				document.getElementById("hours").innerHTML = hours;
+				document.getElementById("minutes").innerHTML = minutes;
+				document.getElementById("seconds").innerHTML = seconds;
 
 				// If the count down is finished, write some text
 				if (distance < 0 && distance > (-1000 * 60 * 60 * 12)) {
@@ -150,7 +109,7 @@ description: Track and optimize your sales team in real time
 
 	<section class="posts">
 		<h1>Recent Posts</h1>
-		<div class="post-container">
+		<div class="post-container fade-item">
 		{% for post in site.posts limit:3%}
 			<div class="post">
 				<a href="{{ post.url }}">

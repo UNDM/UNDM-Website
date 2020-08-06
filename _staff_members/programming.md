@@ -1,6 +1,6 @@
 ---
-name: Kyle Jamison
+name: Keland Potthoff
 position: Programming
-image_path: ../images/exec/kyle.jpg
+image_path: ../images/exec/keland.jpg
 order: 8
 ---

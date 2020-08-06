@@ -1,6 +1,6 @@
 ---
-name: Sophie Smith
+name: Luci Moran
 position: Marketing
-image_path: ../images/exec/sophie.jpg
+image_path: ../images/exec/luci.jpg
 order: 7
 ---

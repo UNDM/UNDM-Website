@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+		<link rel="icon" type="image/png" href="../images/logos/smallLogo.png">
 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
@@ -24,12 +24,36 @@
 			<script async src='https://www.google-analytics.com/analytics.js'></script>
 		{% endif %}
 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		<script>
+			function showImages(el) {
+				var windowHeight = jQuery( window ).height();
+				$(el).each(function(){
+					var thisPos = $(this).offset().top;
+					var topOfWindow = $(window).scrollTop();
+					if (topOfWindow + windowHeight - 200 > thisPos ) {
+						$(this).addClass("fadeIn");
+					}
+				});
+			}
+			// if the image in the window of browser when the page is loaded, show that image
+			$(document).ready(function(){
+					showImages('.fade-item');
+			});
+			// if the image in the window of browser when scrolling the page, show that image
+			$(window).scroll(function() {
+					showImages('.fade-item');
+			});
+		</script>
 	</head>
 	<body>
 		<header>
 			<div class="container">
 				<div class="nav-container">
-					<div class="company-name"><a href="{{ site.baseurl }}/">UNDM</a></div>
+					<div class="company-name">
+						<a href="{{ site.baseurl }}/">
+							<img alt="UNDM Logo" src="../images/logos/flameLogo.png" width="50%" height="auto">
+						</a>
+					</div>
 					{% include navigation.html %}
 				</div>
 			</div>
@@ -52,7 +76,7 @@
 					</ul>
 					{% endfor %}
 				</div>
-				<p class="copyright">&copy; {{ site.time | date: '%Y' }} MyApp Ltd. • <a href="#">Terms</a> &amp; <a href="#">Privacy</a> • <a href="https://cloudcannon.com/">Template by CloudCannon</a></p>
+				<p class="copyright">&copy; University of Nebraska-Lincoln Dance Marathon</a></p>
 			</div>
 		</footer>
 		<script>
