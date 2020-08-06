@@ -18,7 +18,7 @@ description:
 
   <div class="wrapper">
 
-  <div class="row justify-content-center">
+  <div class="row justify-content-center fade-item">
         <div class="card-deck">
 
           <div class="card sponsor">
@@ -58,7 +58,7 @@ description:
         </div>
       </div>
 
-      <div class="row justify-content-center">
+      <div class="row justify-content-center fade-item">
         <div class="card-deck">
           <div class="card sponsor">
             <div class="card-body">
@@ -83,15 +83,12 @@ description:
                         for a specific
                         product that customers can enjoy.</h4>
                 </div>
-                
-       
-                
-  
             </div>
           </div>
         </div>
     </div>
   </div>
+
 
     <div class="row" style="border-bottom: 2px solid #D3D3D3;">
         <h2>Sponsorship Levels</h2>
@@ -100,7 +97,8 @@ description:
     <div class="row justify-content-center wrapper">
       <div class="col-2"></div>
           <div class="accordion col-5 spacing">
-            <div class="card level-design">
+
+            <div class="card level-design fade-item">
               <div class="card-header" id="headingTwo">
                 <h3 class="mb-0 h25">
                   <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
@@ -110,7 +108,6 @@ description:
                   </button>
                 </h3>
               </div>
-      
               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body dropdown">
                   + Oppurtunity to porvide small promo items in bags distributed at main event
@@ -120,7 +117,7 @@ description:
               </div>
             </div>
       
-            <div class="card level-design">
+            <div class="card level-design fade-item">
               <div class="card-header" id="headingTwo">
                 <h3 class="mb-0">
                   <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
@@ -130,7 +127,6 @@ description:
                   </button>
                 </h3>
               </div>
-      
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body dropdown">
                   + Hyper linked logo on UNDM's website
@@ -138,7 +134,7 @@ description:
               </div>
             </div>
       
-            <div class="card level-design">
+            <div class="card level-design fade-item">
               <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
                   <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"
@@ -148,7 +144,6 @@ description:
                   </button>
                 </h3>
               </div>
-      
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body dropdown">
                   + Tickets to Miracle Talent Show
@@ -158,7 +153,7 @@ description:
               </div>
             </div>
       
-            <div class="card level-design">
+            <div class="card level-design fade-item">
               <div class="card-header" id="headingFour">
                 <h3>
                   <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
@@ -168,7 +163,6 @@ description:
                   </button>
                 </h3>
               </div>
-      
               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                 <div class="card-body dropdown">
                   + Personalized social media post
@@ -177,7 +171,7 @@ description:
               </div>
             </div>
       
-            <div class="card level-design">
+            <div class="card level-design fade-item">
               <div class="card-header" id="headingFive">
                 <h3 class="mb-0">
                   <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"
@@ -187,7 +181,6 @@ description:
                   </button>
                 </h3>
               </div>
-      
               <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                 <div class="card-body dropdown">
                   + Speech at main event
@@ -216,9 +209,10 @@ description:
     <!--Populates grid of kids with names from sponsors.yml file in site data.-->
     <table>
       {% tablerow sponsor in site.data.sponsors cols:4 %}
-      <h2><a href={{sponsor.link}}  style="color: black;">{{sponsor.name}}</a></h2>
-      <img src={{sponsor.image}}/>
+      <img class="fade-item" style="max-height: 100px; max-width: 100px;" src={{sponsor.image}}/>
+      <h2 class="fade-item"><a href={{sponsor.link}}  style="color: black;">{{sponsor.name}}</a></h2>
       {% endtablerow %}
+      
       </tr>
     </table>
   </div>
