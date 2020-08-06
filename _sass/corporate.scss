@@ -13,26 +13,19 @@
 
 
 .card-body {
-  align-items: center; display: flex;
+  align-items: center; 
+  display: flex;
   
   .layer-1 {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    // top: 50%;
-    // -ms-transform: translateY(-50%);
-    // transform: translateY(-50%);
     text-align: center!important;
-    margin-right: 4%;
   }
 
   .layer-2 {
     position: absolute;
     z-index: 2;
-    // top: 50%;
-    // -ms-transform: translateY(-50%);
-    // transform: translateY(-50%);
-    // text-align: center!important;
-    margin-right: 4%;
+    margin-right: 12%;
   }
 
   .main {
@@ -56,26 +49,20 @@
 
 
 .card-body:hover {
-  align-items: center; display: flex;
+  align-items: center; 
+  display: flex;
 
   .layer-1 {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    // top: 50%;
-    // -ms-transform: translateY(-50%);
-    // transform: translateY(-50%);
     text-align: center!important;
-    margin-right: 4%;
   }
 
   .layer-2 {
     position: absolute;
     z-index: 2;
-    // top: 50%;
-    // -ms-transform: translateY(-50%);
-    // transform: translateY(-50%);
-    // text-align: center!important;
-    margin-right: 4%;
+    text-align: center!important;
+    margin-right: 12%;
   }
 
   .main { 
