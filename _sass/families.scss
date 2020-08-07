@@ -1,127 +1,198 @@
 .families-head {
-    display: flex;
-	flex-direction: column;
-	align-items: center;
-    justify-content: center;
-    p {
-        text-align: center;
-    }
-}
-
-.families {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p {
     text-align: center;
-    margin-bottom: 30px;
+  }
+}
+.families {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .family-cards {
-    .star {
-        visibility: hidden;
-    }
-    
-    .fadeIn {
-        -webkit-animation: animat_show 0.8s;
-        animation: animat_show 0.8s;
-        visibility: visible !important;
-    }
-    
-    @-webkit-keyframes animat_show{
-        0%{opacity:0}
-        100%{opacity:1}
-    }
-    
-    .family-card-separator {
-        height: 50px;
-        visibility: hidden;
-    }
+  .star {
+    visibility: hidden;
+  }
 
-    .family-card-right-aligned {
-        position: relative;
-        left: 200px;
-        background-color: #D3D3D3;
-        width: calc(100vh + 200px);
-        h1 {
-            margin-left: 125px;
-            position: absolute;
-            top: 0px;
-        }
-        h4 {
-            margin-left: 125px;
-            position: absolute;
-            top: 75px;
-            
-        }
-    }
+  .fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+  }
 
-    .family-card-pic-right-aligned {
-        position: relative;
-        left: -100px;
-        height: 200px;
-        width: 200px;
-        overflow: hidden;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border: 6px solid #db3333;
-        img {
-            width: auto;
-            height: 100%;
-        }
+  @-webkit-keyframes animat_show {
+    0% {
+      opacity: 0;
     }
+    100% {
+      opacity: 1;
+    }
+  }
 
-    .family-card-left-aligned {
-        position: relative;
-        right: 200px;
-        background-color: #D3D3D3;
-        width: calc(100vh+200px);
-        h1 {
-            right: 125px;
-            position: absolute;
-            text-align: right;
-            top: 0px;
-        }
-        h4 {
-            right: 125px;
-            text-align: right;
-            position: absolute;
-            top: 75px;
-            
-        }
-    }
+  .family-card-separator {
+    height: 50px;
+    visibility: hidden;
+  }
 
-    .family-card-pic-left-aligned {
-        position: relative;
-        right: -100px;
-        margin-left: auto;
-        margin-right: 0;
-        height: 200px;
-        width: 200px;
-        overflow: hidden;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border: 6px solid #ffbc40ff;
-        img {
-            width: auto;
-            height: 100%;
-        }
+  .family-card-right-aligned {
+    position: relative;
+    left: 0vw;
+    background-color: #d3d3d3;
+    width: 70vw;
+    height: 10vw;
+    h1 {
+      left: 6vw;
+      position: absolute;
+      top: -1vh;
+      font-size: 2.5vw;
     }
+    h4 {
+      left: 6vw;
+      position: absolute;
+      top: 3.5vw;
+      font-size: 1.25vw;
+    }
+  }
+
+  .family-card-pic-right-aligned {
+    position: relative;
+    left: -5vw;
+    height: 10vw;
+    width: 10vw;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 6px solid #db3333;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .family-card-left-aligned {
+    position: relative;
+    right: 0vw;
+    background-color: #d3d3d3;
+    width: 70vw;
+    height: 10vw;
+    h1 {
+      right: 6vw;
+      position: absolute;
+      text-align: right;
+      top: -1vh;
+      font-size: 2.5vw;
+    }
+    h4 {
+      right: 6vw;
+      text-align: right;
+      position: absolute;
+      top: 3.5vw;
+      font-size: 1.25vw;
+    }
+  }
+
+  .family-card-pic-left-aligned {
+    position: relative;
+    right: -5vw;
+    margin-left: auto;
+    margin-right: 0;
+    height: 10vw;
+    width: 10vw;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 6px solid #ffbc40ff;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
 }
 
 .family-grid {
-    table {
-        position: relative;
-        width: 80vw ;
-        text-align: center;
-        border: 3px solid #db3333;
-        border-collapse: collapse;
-        tr{
-            border: 3px solid #db3333;
-            border-collapse: collapse;
-        }
-        td {
-            border: 3px solid #db3333;
-            border-collapse: collapse;
-        }
+  table {
+    position: relative;
+    width: 65vw;
+    text-align: center;
+    border: 3px solid #db3333;
+    border-collapse: collapse;
+    table-layout: fixed;
+    tr {
+      border: 3px solid #db3333;
+      border-collapse: collapse;
     }
-    
+    td {
+      border: 3px solid #db3333;
+      border-collapse: collapse;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 4vh;
+      .layer-1 {
+        position: sticky;
+        z-index: 1;
+        top: 50%;
+      }
+
+      .layer-2 {
+        position: relative;
+        z-index: 2;
+        top: -5vh;
+      }
+
+      .main {
+        transition-duration: 0.7s;
+        opacity: 1;
+      }
+
+      .secondary {
+        transition-duration: 0.7s;
+        opacity: 0;
+      }
+      h4 {
+        font-size: 1vw;
+      }
+      h2 {
+        font-size: 2vw;
+      }
+    }
+    td:hover {
+      border: 3px solid #db3333;
+      border-collapse: collapse;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 4vh;
+      .layer-1 {
+        position: sticky;
+        z-index: 1;
+      }
+
+      .layer-2 {
+        position: relative;
+        z-index: 2;
+        top: -5vh;
+      }
+
+      .main {
+        transition-duration: 0.7s;
+        opacity: 0.1;
+      }
+      .secondary {
+        transition-duration: 0.7s;
+        opacity: 1;
+      }
+      h4 {
+        font-size: 1vw;
+      }
+      h2 {
+        font-size: 2vw;
+      }
+    }
+  }
 }
