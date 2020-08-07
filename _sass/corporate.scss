@@ -1,95 +1,107 @@
-.ways-to-sponsor {
-  padding-top: 5%;
-  padding-bottom: 0px;
-}
 .title {
   background: rgb(150, 149, 147); 
-  margin: 0; 
-  padding: 20px 0; 
-  width: 100%;
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   h2 {
     color: white;
-    text-align: center
+    text-align: center;
   }
 }
 
+
 .card-body {
+  align-items: center; 
+  display: flex;
+  
   .layer-1 {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    text-align: center!important;
   }
 
   .layer-2 {
     position: absolute;
     z-index: 2;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin-right: 12%;
   }
 
   .main {
     transition-duration: .7s;
     opacity: 1;
-    color: rgb(198, 31, 74);
+    color: black;
+    text-align: center;
   }
   
   .secondary { 
     transition-duration: .7s; 
-    opacity: 0; } 
+    opacity: 0;
+    color: black; 
+    text-align: center;
+  } 
 }
 
 .dropdown {
   background: white
 }
- 
+
+
 .card-body:hover {
+  align-items: center; 
+  display: flex;
+
   .layer-1 {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    text-align: center!important;
   }
 
   .layer-2 {
     position: absolute;
     z-index: 2;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    text-align: center!important;
+    margin-right: 12%;
   }
 
   .main { 
     transition-duration: .7s; 
     opacity: 0.2;
+    text-align: center;
   }
   .secondary { 
     transition-duration: .7s; 
     opacity: 1;
+    text-align: center;
   }
+}
+
+.wrapper {
+  margin-bottom: 10%;
+}
+
+.spacing {
+  margin-top: 5%;
+}
+
+.row {
+  margin-bottom: 3%
 }
   
  .sponsor {
-    width: 25rem; 
-    height: 25rem; 
+    height: 23rem; 
+    width: 23rem; 
     margin-top: 5%;
-    border: 8px solid rgb(198, 31, 74)!important;
+    background-color: #D3D3D3!important;
+    border: 6px solid #db3333;
     overflow-y: auto;
-  }
-
-  .sponsor-style {
-    text-align: center; background: rgba(198, 31, 74, .5); 
   }
 
   .level-design {
     background-color: rgb(255, 188, 64); 
-    margin-left: 25%; 
-    margin-right: 25%;
-
+    
+    
     h3 {
       text-align: center;
       margin: 0;
@@ -98,19 +110,8 @@
     h3 .title {
       color: black;
     }
-
-    h3 .money {
-      color: rgb(173, 38, 117);
-    }
   }
 
-  .level-section {
-    background: rgba(255, 188, 64, .5); margin: 0; padding-top: 3%
-  }
-
-  .sponsor-section {
-    text-align: center; background: rgba(198, 31, 74, .5); margin: 0; padding: 70px
-  }
 
   .card-header {
     border-radius: 40%!important;
@@ -125,6 +126,36 @@
       color: rgb(173, 38, 117);
     }
   }
+
+  .sponsors-head {
+    display: flex;
+	  flex-direction: column;
+  	align-items: center;
+    justify-content: center;
+    p {
+        text-align: center;
+    }
+    margin-bottom: 5%;
+}
+
+  .sponsor-grid {
+    table {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+
+        tr{
+            border-collapse: collapse;
+        }
+        td {
+            border-collapse: collapse;
+            padding: 4%;
+        }
+    }
+    
+}
 
   
 
