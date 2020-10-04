@@ -1,6 +1,7 @@
 .nav-open nav {
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
 	padding: 10px 0;
+	position: fixed;
 	a {
 		display: block;
 	}
@@ -50,6 +51,7 @@ nav {
 			top: -22px;
 			font-size: 1.9em;
 			border: 0;
+
 
 			@media #{$mid-point} {
 				display: none;
