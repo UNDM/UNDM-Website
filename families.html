@@ -2,45 +2,91 @@
 title: Families
 description: >-
     Have a child that wants to become a part of UNDM? Contact our Family Relations Directors: family.relations@unldancemarathon.com
----
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
     function showImages(el) {
-        var windowHeight = jQuery( window ).height();
-        $(el).each(function(){
+        var windowHeight = jQuery(window).height();
+        $(el).each(function () {
             var thisPos = $(this).offset().top;
 
             var topOfWindow = $(window).scrollTop();
-            if (topOfWindow + windowHeight - 200 > thisPos ) {
+            if (topOfWindow + windowHeight - 200 > thisPos) {
                 $(this).addClass("fadeIn");
             }
         });
     }
 
     // if the image in the window of browser when the page is loaded, show that image
-    $(document).ready(function(){
-            showImages('.star');
+    $(document).ready(function () {
+        showImages('.star');
     });
 
     // if the image in the window of browser when scrolling the page, show that image
-    $(window).scroll(function() {
-            showImages('.star');
+    $(window).scroll(function () {
+        showImages('.star');
     });
 </script>
 <div class="content">
     <div class="families-head">
         <h1>Meet Our Miracle Kids</h1>
-        <p>Have a child that wants to become a part of UNDM? Contact our Family Relations Directors: 
+        <p>Have a child that wants to become a part of UNDM? Contact our Family Relations Directors:
             <a href="mailto:family.relations@unldancemarathon.com">family.relations@unldancemarathon.com</a>
         </p>
+        <h3>Write a letter to a kid at Omaha Children's Hospital!</h3>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn button" data-toggle="modal" data-target="#exampleModal">
+            Write Letter
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="writeLetter"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="writeLetter">Write a letter to a kid at Omaha Children's Hospital!</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            There are kids at Children's who could use your 
+                            support right now! They are going through tough 
+                            things. Send words of encouragement, a funny joke, 
+                            or a story that might lift up their spirits. The sky is the limit!
+                        </p>
+                        <p>
+                            Note: please avoid religious messages because of the diverse patient population and messages of "get well soon" as many of the kids have chronic illnesses. Also, please only send one letter.
+                        </p>
+                        <p>
+                            Thank you so much! Consider getting more involved with UNDM by registering for HuskerThon! Use the code UNDM2020 to get FREE registration!
+                        </p>
+                        <form name="kiddoLetters" method="post" class="letter-form" data-netlify="true">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name..." />
+                    
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email..." required />
+                    
+                            <label for="message">Message to the Miracle Child</label>
+                            <textarea name="message" id="message" placeholder="Enter your letter..."></textarea>
+                    
+                            <input type="submit" value="Send Message" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <section class="families">
         <div id="familyCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 {% for family in site.data.families %}
-                    <div class="item" style="height:50vh">
-                        <img src="{{ family.image }}" alt="Dance Marathon family" style="max-width: 100%; max-height: 100%; object-fit: contain;">
-                    </div>
+                <div class="item" style="height:50vh">
+                    <img src="{{ family.image }}" alt="Dance Marathon family"
+                        style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
                 {% endfor %}
             </div>
             <script>
@@ -51,35 +97,47 @@ description: >-
     <section class="family-cards">
         <div class="fade-item family-card-right-aligned">
             <div class="family-card-pic-right-aligned">
-                <img src="../images/kids/zalyn.jpg"/> <!--TODO: Replace this with kid images.-->
+                <img src="../images/kids/zalyn.jpg" />
+                <!--TODO: Replace this with kid images.-->
             </div>
             <h1>Zalyn</h1>
             <h4>
-                Zalyn was born with Trisomy 18 (Edward's Syndrome). Only 5 out of 100 children with Edward's Syndrome make it to birth, and only 1 of those 5 children will make it to their first birthday. Zalyn is now five and a half years old! He loves paw patrol, swimming, and playing outside.
+                Zalyn was born with Trisomy 18 (Edward's Syndrome). Only 5 out of 100 children with Edward's Syndrome
+                make it to birth, and only 1 of those 5 children will make it to their first birthday. Zalyn is now five
+                and a half years old! He loves paw patrol, swimming, and playing outside.
             </h4>
         </div>
         <div class="family-card-separator"></div>
         <div class="fade-item family-card-left-aligned">
             <div class="family-card-pic-left-aligned">
-                <img src="../images/kids/marlys.jpg"/> <!--TODO: Replace this with kid images.-->
+                <img src="../images/kids/marlys.jpg" />
+                <!--TODO: Replace this with kid images.-->
             </div>
             <h1>Marlys</h1>
             <h4>
-                Marlys suffers from Zygomycosis, BPD, and pulmonary hypertension. Despite being born at 25 weeks, and being given a 20% chance to live, Marlys is now three years old! Her team at Children's has become like family!
+                Marlys suffers from Zygomycosis, BPD, and pulmonary hypertension. Despite being born at 25 weeks, and
+                being given a 20% chance to live, Marlys is now three years old! Her team at Children's has become like
+                family!
             </h4>
         </div>
         <div class="family-card-separator"></div>
         <div class="fade-item family-card-right-aligned">
             <div class="family-card-pic-right-aligned">
-                <img src="../images/kids/milly.jpg"/> <!--TODO: Replace this with kid images.-->
+                <img src="../images/kids/milly.jpg" />
+                <!--TODO: Replace this with kid images.-->
             </div>
             <h1>Milly</h1>
             <h4>
-                Milly has dealt with pulmonary hypoplasia and several other conditions in her life. Despite hearing loss brought on by complications with her lungs, Milly has a beautiful singing voice and was named the <a href="https://childrensmiraclenetworkhospitals.org/meet-milly-2016-17-neb-champion/">National Miracle Child</a> in 2017!
-            </h4> <!--TODO: Fill this in with kid info.-->
+                Milly has dealt with pulmonary hypoplasia and several other conditions in her life. Despite hearing loss
+                brought on by complications with her lungs, Milly has a beautiful singing voice and was named the <a
+                    href="https://childrensmiraclenetworkhospitals.org/meet-milly-2016-17-neb-champion/">National
+                    Miracle Child</a> in 2017!
+            </h4>
+            <!--TODO: Fill this in with kid info.-->
         </div>
     </section>
-    <section class="family-grid"> <!--Populates grid of kids with names from kids.yml file in site data.-->
+    <section class="family-grid">
+        <!--Populates grid of kids with names from kids.yml file in site data.-->
         <table>
             {% tablerow kid in site.data.kids cols:4 %}
             <div class="layer-1">
