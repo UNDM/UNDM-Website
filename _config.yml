@@ -2,9 +2,9 @@
 # Site
 
 title: UNDM
-url: "https://proud-alligator.cloudvent.net"
+url: "http://unldancemarathon.com"
 baseurl:
-google_analytics_key:
+google_analytics_key: "UA-5103368-4"
 google_maps_javascript_api_key:
 disqus_shortname:
 
