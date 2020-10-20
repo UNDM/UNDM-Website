@@ -72,17 +72,18 @@ description: Have a child that wants to become a part of UNDM? Contact our Famil
             {% endfor %}
         </div>
     </section>
-    <section class="family-grid"> <!--Populates grid of kids with names from kids.yml file in site data.-->
-        <table>
+    <section class="family-grid mt-3">
+        <div class="card-deck">
             {% tablerow kid in site.data.kids cols:4 %}
-            <div class="layer-1">
-                <h2 class="main">{{kid.name}}</h2>
-            </div>
-            <div class="layer-2">
-                <h4 class="secondary">{{kid.fact}}</h4>
+            <div class="fade-item card">
+                <div class="my-auto" style="position: relative;">
+                  <h2>{{kid.name}}</h2>
+                  <div class="vertical-center-text">
+                    <p>{{kid.fact}}</p>
+                  </div>
+                </div>
             </div>
             {% endtablerow %}
-            </tr>
-        </table>
+        </div>
     </section>
 </div>

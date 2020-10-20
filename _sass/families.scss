@@ -86,83 +86,78 @@
 }
 
 .family-grid {
-  table {
-    position: relative;
-    width: 80vw;
-    text-align: center;
-    border: 3px solid #db3333;
-    border-collapse: collapse;
-    table-layout: fixed;
-    tr {
-      border: 3px solid #db3333;
-      border-collapse: collapse;
-    }
-    td {
-      border: 3px solid #db3333;
-      border-collapse: collapse;
-      word-wrap: break-word;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      height: 4vh;
-      .layer-1 {
-        position: sticky;
-        z-index: 1;
-        top: 50%;
-      }
+  .card-deck {
+    .card {
+      min-width: calc(25% - 30px);
+      margin: 15px;
+      padding: 10px;
+      background-color: #d3d3d3;
+      border-radius: 5px; /* 5px rounded corners */
+      box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+      transition: all .5s;
 
-      .layer-2 {
-        position: relative;
-        z-index: 2;
-        top: -5vh;
-      }
-
-      .main {
-        transition-duration: 0.7s;
-        opacity: 1;
-      }
-
-      .secondary {
-        transition-duration: 0.7s;
+      .vertical-center-text {
+        height: 0;
         opacity: 0;
-      }
-      h4 {
-        font-size: 1vw;
-      }
-      h2 {
-        font-size: 2vw;
+        display: flex;
+        margin: auto;
+        align-items:center;
+        justify-content:center;
+        transition: height .7s, opacity .5s;
       }
     }
-    td:hover {
-      border: 3px solid #db3333;
-      border-collapse: collapse;
-      word-wrap: break-word;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      height: 4vh;
-      .layer-1 {
-        position: sticky;
-        z-index: 1;
-      }
+    .card:hover {
+      min-width: calc(25% - 30px);
+      margin: 15px;
+      padding: 10px;
+      background-color: #dcdcdc;
+      border-color: #db3333;
+      border-radius: 5px; /* 5px rounded corners */
+      box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
 
-      .layer-2 {
-        position: relative;
-        z-index: 2;
-        top: -5vh;
-      }
-
-      .main {
-        transition-duration: 0.7s;
-        opacity: 0.1;
-      }
-      .secondary {
-        transition-duration: 0.7s;
+      .vertical-center-text {
+        height: 150px; /* TODO This could be fixed to scale to the height needed (instead of a constant) */
         opacity: 1;
+        display: flex;
+        margin: auto;
+        align-items:center;
+        justify-content:center;
       }
-      h4 {
-        font-size: 1vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .family-grid {
+    .card-deck {
+      .card {
+        min-width: calc(25% - 30px);
+        margin: 15px;
+        padding: 10px;
+        background-color: #d3d3d3;
+        border-radius: 5px; /* 5px rounded corners */
+        box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+
+        .vertical-center-text {
+          height: auto;
+          opacity: 1;
+        }
       }
-      h2 {
-        font-size: 2vw;
+    }
+    .card-deck:hover {
+      .card {
+        min-width: calc(25% - 30px);
+        margin: 15px;
+        padding: 10px;
+        background-color: #d3d3d3;
+        border-radius: 5px; /* 5px rounded corners */
+        box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+
+        .vertical-center-text {
+          height: auto;
+          opacity: 1;
+        }
       }
     }
   }
