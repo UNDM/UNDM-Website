@@ -1,14 +1,40 @@
-<nav>
-	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
-				{% for link in site.data.navigation %}
-		{% assign class = "" %}
-		{% if link.highlight %}
-			{% assign class = class | append: " highlight" %}
-		{% endif %}
+<a href="{{ site.baseurl }}/">
+	<img alt="UNDM Logo" src="../images/logos/flame_one_line.png" width="25%" height="auto" style="max-width: 500px;">
+</a>
 
-		{% if link.link == page.url %}
-			{% assign class = class | append: " active" %}
-		{% endif %}
-		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
-	{% endfor %}
+<a class="mobile" href="#">&#9776;</a>
+<nav>
+  <ul>
+	  <li>
+			{% for link in site.data.navigation %}
+			{% assign class = "" %}
+			{% if link.highlight %}
+				{% assign class = class | append: " highlight" %}
+			{% endif %}
+	
+			{% if link.link == page.url %}
+				{% assign class = class | append: " active" %}
+			{% endif %}
+			<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+		{% endfor %}
+	  </li>
+  </ul>
+  <div style="clear:both;"></div>
 </nav>
+
+<script>
+$(document).ready(function() {
+  $('.mobile').click(function () {
+	  $('nav').toggleClass('active'); 
+   });
+  
+   $('nav ul li ul').each(function() {
+    $(this).before('<span class=\"arrow\"></span>');
+  });
+  
+  $('nav ul li').click(function() {
+    $(this).children('ul').toggleClass('active');
+     $(this).children('.arrow').toggleClass('rotate');
+  });
+});
+</script>

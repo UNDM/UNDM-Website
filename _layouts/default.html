@@ -49,9 +49,6 @@
 		<header>
 			<div class="container">
 				<div class="nav-container">
-					<a href="{{ site.baseurl }}/" style="position: relative; z-index: 1;">
-						<img alt="UNDM Logo" src="../images/logos/flame_one_line.png" width="25%" height="auto" style="max-width: 500px;">
-					</a>
 					{% include navigation.html %}
 				</div>
 			</div>
@@ -77,12 +74,12 @@
 				<p class="copyright">&copy; University of Nebraska-Lincoln Dance Marathon</a></p>
 			</div>
 		</footer>
-		<script>
+		<!-- <script>
 			document.getElementById("open-nav").onclick = function () {
 				document.body.classList.toggle("nav-open");
 				return false;
 			};
-		</script>
+		</script> -->
 	<script>
 		if (window.netlifyIdentity) {
 			window.netlifyIdentity.on("init", user => {
