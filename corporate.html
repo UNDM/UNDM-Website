@@ -49,7 +49,7 @@ description:
                 <h2 class="main ">Catering the Event</h2>
               </div>
                 <h4 class="secondary layer-2" style="margin-top: 0">
-                  We provide food at our 12 hour long Huskerthon and various community events.
+                  We provide food at our 12 hour long HuskerThon and various community events.
                   Donations of meals, drinks, and snacks are greatly appreciated.
                 </h4>
             </div>
@@ -205,14 +205,19 @@ description:
           Hospitals, we would like to express our appreciation for your consideration of our cause. We are looking
           forward to working with you and your business in the future!</h2>
       </div>
-    </div>
+  </div>
+
+
+  <div class="row" style="border-bottom: 2px solid #D3D3D3;">
+    <h2><br>HuskerThon 2020 Sponsors</h2>
+  </div>
+
 
   <div  class="sponsor-grid">
     <!--Populates grid of kids with names from sponsors.yml file in site data.-->
     <table>
       {% tablerow sponsor in site.data.sponsors cols:4 %}
       <a href={{sponsor.link}}><img class="fade-item" style="max-height: 100px; max-width: 100px;" src={{sponsor.image}}/></a>
-      
       {% endtablerow %}
       
       </tr>
