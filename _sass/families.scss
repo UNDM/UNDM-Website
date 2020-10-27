@@ -3,8 +3,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  h1 {
+    text-align: center;
+  }
   p {
     text-align: center;
+    margin: 4px;
+  }
+  a {
+    font-size: max(1vw, 13px);
   }
   button {
     background-color: #FFBC40;
@@ -17,185 +24,144 @@
 }
 
 .family-cards {
-  .star {
-    visibility: hidden;
-  }
-
-  .fadeIn {
-    -webkit-animation: animat_show 0.8s;
-    animation: animat_show 0.8s;
-    visibility: visible !important;
-  }
-
-  @-webkit-keyframes animat_show {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .family-card-separator {
-    height: 50px;
-    visibility: hidden;
-  }
-
-  .family-card-right-aligned {
-    position: relative;
-    left: 0vw;
+  .family-card {
+    width: auto;
+    min-height: 10vw;
+    max-width: 1250px;
+    padding: 10px;
+    margin-bottom: 5vh;
     background-color: #d3d3d3;
-    width: 80vw;
-    height: 10vw;
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+    .family-card-image {
+      height: 10vw;
+      width: 10vw;
+      max-height: 125px;
+      max-width: 125px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      border: 6px solid #db3333;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
     h1 {
-      left: 6vw;
-      position: absolute;
-      top: -1vh;
-      font-size: 2.5vw;
+      margin: 5px;
     }
+
     h4 {
-      left: 6vw;
-      position: absolute;
-      top: 3.5vw;
-      font-size: 1.25vw;
+      margin: 5px;
     }
-  }
 
-  .family-card-pic-right-aligned {
-    position: relative;
-    left: -5vw;
-    height: 10vw;
-    width: 10vw;
-    overflow: hidden;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border: 6px solid #db3333;
-    img {
-      width: auto;
-      height: 100%;
-    }
-  }
-
-  .family-card-left-aligned {
-    position: relative;
-    right: 0vw;
-    background-color: #d3d3d3;
-    width: 80vw;
-    height: 10vw;
-    h1 {
-      right: 6vw;
-      position: absolute;
-      text-align: right;
-      top: -1vh;
-      font-size: 2.5vw;
-    }
-    h4 {
-      right: 6vw;
-      text-align: right;
-      position: absolute;
-      top: 3.5vw;
-      font-size: 1.25vw;
-    }
-  }
-
-  .family-card-pic-left-aligned {
-    position: relative;
-    right: -5vw;
-    margin-left: auto;
-    margin-right: 0;
-    height: 10vw;
-    width: 10vw;
-    overflow: hidden;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border: 6px solid #ffbc40ff;
-    img {
-      width: auto;
-      height: 100%;
+    @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      .family-card-image {
+        height: 50px;
+        width: 50px;
+        right: 10px;
+        position: absolute;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid #db3333;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+      }
+      h1 {
+        margin: 10px;
+      }
+      h4 {
+        margin: 10px;
+      }
     }
   }
 }
 
 .family-grid {
-  table {
-    position: relative;
-    width: 80vw;
-    text-align: center;
-    border: 3px solid #db3333;
-    border-collapse: collapse;
-    table-layout: fixed;
-    tr {
-      border: 3px solid #db3333;
-      border-collapse: collapse;
-    }
-    td {
-      border: 3px solid #db3333;
-      border-collapse: collapse;
-      word-wrap: break-word;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      height: 4vh;
-      .layer-1 {
-        position: sticky;
-        z-index: 1;
-        top: 50%;
-      }
+  .card-deck {
+    .card {
+      min-width: calc(25% - 30px);
+      margin: 15px;
+      padding: 10px;
+      background-color: #d3d3d3;
+      border-radius: 5px; /* 5px rounded corners */
+      box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+      transition: all .5s;
 
-      .layer-2 {
-        position: relative;
-        z-index: 2;
-        top: -5vh;
-      }
-
-      .main {
-        transition-duration: 0.7s;
-        opacity: 1;
-      }
-
-      .secondary {
-        transition-duration: 0.7s;
+      .vertical-center-text {
+        height: 0;
         opacity: 0;
-      }
-      h4 {
-        font-size: 1vw;
-      }
-      h2 {
-        font-size: 2vw;
+        display: flex;
+        margin: auto;
+        align-items:center;
+        justify-content:center;
+        transition: height .7s, opacity .5s;
       }
     }
-    td:hover {
-      border: 3px solid #db3333;
-      border-collapse: collapse;
-      word-wrap: break-word;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      height: 4vh;
-      .layer-1 {
-        position: sticky;
-        z-index: 1;
-      }
+    .card:hover {
+      min-width: calc(25% - 30px);
+      margin: 15px;
+      padding: 10px;
+      background-color: #dcdcdc;
+      border-color: #db3333;
+      border-radius: 5px; /* 5px rounded corners */
+      box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
 
-      .layer-2 {
-        position: relative;
-        z-index: 2;
-        top: -5vh;
-      }
-
-      .main {
-        transition-duration: 0.7s;
-        opacity: 0.1;
-      }
-      .secondary {
-        transition-duration: 0.7s;
+      .vertical-center-text {
+        height: 150px; /* TODO This could be fixed to scale to the height needed (instead of a constant) */
         opacity: 1;
+        display: flex;
+        margin: auto;
+        align-items:center;
+        justify-content:center;
       }
-      h4 {
-        font-size: 1vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .family-grid {
+    .card-deck {
+      .card {
+        min-width: calc(25% - 30px);
+        margin: 15px;
+        padding: 10px;
+        background-color: #d3d3d3;
+        border-radius: 5px; /* 5px rounded corners */
+        box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+
+        .vertical-center-text {
+          height: auto;
+          opacity: 1;
+        }
       }
-      h2 {
-        font-size: 2vw;
+    }
+    .card-deck:hover {
+      .card {
+        min-width: calc(25% - 30px);
+        margin: 15px;
+        padding: 10px;
+        background-color: #d3d3d3;
+        border-radius: 5px; /* 5px rounded corners */
+        box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+
+        .vertical-center-text {
+          height: auto;
+          opacity: 1;
+        }
       }
     }
   }
