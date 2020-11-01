@@ -46,8 +46,10 @@ nav {
 
 nav ul {
 	text-transform: uppercase;
-  margin:0;
-  list-style:none;
+	font-size: .8em;
+	width: 100%;
+//   margin:0;
+//   list-style:none;
   
    @include breakpoint(700) {
 	    margin:0;
@@ -70,17 +72,23 @@ nav ul {
     
     a {
 	  display:inline;
-	  border: 0;
-		padding: 0 20px;
+	//   border: 0;
+		// padding: 0 20px;
     //   padding: $link-vertical-padding $link-horizontal-padding;
       text-align:center;
-      color: rgba(255,255,255,.8);
     //   text-decoration:none;
     //   border-right:1px solid darken($menu-background,10%);
-    //   text-shadow:2px 2px 2px rgba(0,0,0,.8);
+	//   text-shadow:2px 2px 2px rgba(0,0,0,.8);
+	margin: 0 3px;
+		padding: 20px 10px;
+		border-bottom: 1px solid rgba(255,255,255,0);
+		color: rgba(255,255,255,.8);
+		transition: .2s ease-in-out;
+		// display: none;
       
       &:hover {
-        border: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+		color: #fff;
       }
 
       @include breakpoint(700) {

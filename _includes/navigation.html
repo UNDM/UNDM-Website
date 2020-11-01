@@ -1,10 +1,9 @@
-
-
 <a class="mobile" href="#">&#9776;</a>
 <nav>
   <ul>
-	  <li>
+	  
 			{% for link in site.data.navigation %}
+			<li>
 			{% assign class = "" %}
 			{% if link.highlight %}
 				{% assign class = class | append: " highlight" %}
@@ -14,8 +13,9 @@
 				{% assign class = class | append: " active" %}
 			{% endif %}
 			<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
-		{% endfor %}
-	  </li>
+		</li>
+			{% endfor %}
+	  
   </ul>
   <div style="clear:both;"></div>
 </nav>
