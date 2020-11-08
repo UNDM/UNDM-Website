@@ -1,18 +1,40 @@
 .nav-open nav {
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
-	padding: 10px 0;
+	// background: #fff;
+	padding: 20px;
 	a {
 		display: block;
+		// background: black;
 	}
 
 	@media #{$mid-point} {
 		border: 0;
-		padding: 0 20px;
+		padding: 0 5px;
 
 		a {
 			display: inline;
 		}
 	}
+}
+
+.newclass nav {
+	border-bottom: 1px dotted rgba(255, 255, 255, .2);
+	margin-top: 20px;
+	margin-right: 70px;
+	padding: 10px;
+	a {
+		display: block;
+		text-align: center;
+	}
+
+	// @media #{$mid-point} {
+	// 	border: 0;
+	// 	padding: 0 5px;
+
+	// 	a {
+	// 		display: inline;
+	// 	}
+	// }
 }
 
 nav {
@@ -36,6 +58,7 @@ nav {
 		color: rgba(255,255,255,.8);
 		transition: .2s ease-in-out;
 		display: none;
+		text-align: right;
 
 		@media #{$mid-point} {
 			display: inline;

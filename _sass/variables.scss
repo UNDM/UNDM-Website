@@ -5,8 +5,8 @@ $middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
 
 // Breakpoints
 $tablet: "(min-width: 450px)";
-$mid-point: "(min-width: 620px)";
-$desktop: "(min-width: 768px)";
+$mid-point: "(min-width: 1200px)";
+$desktop: "(min-width: 1200px)";
 
 // BootStrap
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round&display=swap);
