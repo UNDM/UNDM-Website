@@ -47,6 +47,8 @@ GEM
       listen (~> 3.0)
     kramdown (2.3.0)
       rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     libv8 (7.3.492.27.1)
     liquid (4.0.3)
     listen (3.2.0)
@@ -81,6 +83,7 @@ DEPENDENCIES
   jekyll-paginate (= 1.1.0)
   jekyll-seo-tag (= 2.4.0)
   jekyll-sitemap (= 1.2.0)
+  kramdown-parser-gfm
   mini_racer
 
 BUNDLED WITH

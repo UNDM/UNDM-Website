@@ -10,4 +10,5 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', '1.2.0'
   gem 'jekyll-autoprefixer'
   gem 'mini_racer'
+  gem "kramdown-parser-gfm"
 end
