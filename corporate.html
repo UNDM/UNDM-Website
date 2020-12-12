@@ -3,226 +3,94 @@ title:
 description: 
 ---
 
-<div class="content">
+<script type="text/javascript">
+  $('body').on('click.collapse-next.data-api', '[data-toggle=collapse-next]', function() {
+    var $target = $(this).parent().next()
+    $target.slideToggle()//data('collapse') ? $target.collapse('toggle') : $target.collapse()    
+  });
+</script>
 
-    <div class="sponsors-head">
-        <h1>Want to Become a Sponsor?</h1>
-        <p>Contact our team:  
-            <a href="mailto:corporate.sponsorship@unldancemarathon.com">corporate.sponsorship@unldancemarathon.com</a>
-        </p>
-    </div>
-
-  <div class="row" style="border-bottom: 2px solid #D3D3D3;">
-      <h2>Ways to Sponsor UNDM</h2>
-  </div>
-
-  <div class="wrapper">
-
-  <div class="row justify-content-center fade-item">
-        <div class="card-deck">
-
-          <div class="card sponsor">
-            <div class="card-body">
-              <div class="layer-1">
-                <h2 class="main">Monetary Donation</h2>
-              </div>
-                <h4 class="secondary layer-2">Monetary donations are versatile as they can go towards operating costs of
-                  HuskerThon and/or our grand fundraising goal.</h4>
-            </div>
-          </div>
-
-          <div class="card sponsor">
-            <div class="card-body">
-              <div class="layer-1">
-                <h2 class="main">In-Kind Donation</h2>
-              </div>
-                <h4 class="secondary layer-2">In-kind donations are greatly appreciated as they can go toward silent auction,
-                  fundraising
-                  incentives, and offsetting event costs.</h4>
-        
-            </div>
-          </div>
-
-          <div class="card sponsor">
-            <div class="card-body">
-              <div class="layer-1">
-                <h2 class="main ">Catering the Event</h2>
-              </div>
-                <h4 class="secondary layer-2" style="margin-top: 0">
-                  We provide food at our 12 hour long HuskerThon and various community events.
-                  Donations of meals, drinks, and snacks are greatly appreciated.
-                </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center fade-item">
-        <div class="card-deck">
-          <div class="card sponsor">
-            <div class="card-body">
-              <div class="layer-1">
-                <h2 class="main">Host a Percentage Night</h2>
-              </div>
-                <h4 class="secondary layer-2">Partner with us during a "fundraising push day" to provide an hour of the day
-                  where
-                  all donations made
-                  to UNDM are matched by an amount of your choosing.</h4>
-  
-            </div>
-          </div>
-
-          <div class="card sponsor">
-            <div class="card-body">
-              <div class="layer-1">
-                    <h2 class="main">Donation Matching Hour</h2>
-                  </div>
-                  <div class="layer-2">
-                      <h4 class="secondary">Partner with us for a day and give a portion of your proceeds to UNDM or
-                          advertise
-                          for a specific
-                          product that customers can enjoy.</h4>
-                  </div>
-                    
-                </div>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-
-    <div class="row" style="border-bottom: 2px solid #D3D3D3;">
-        <h2>Sponsorship Levels</h2>
-    </div>
-
-    <div class="row justify-content-center wrapper">
-      <div class="col-2"></div>
-          <div class="accordion col-5 spacing">
-
-            <div class="card level-design fade-item">
-              <div class="card-header" id="headingTwo">
-                <h3 class="mb-0 h25">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    <h3 class="black">For The Kids</h3>
-                    <h3 class="pink">$200-$400</h3>
-                  </button>
-                </h3>
-              </div>
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body dropdown">
-                  + Oppurtunity to porvide small promo items in bags distributed at main event
-                  + Logo on main event shirt
-                  + Invitation to community hour
-                </div>
-              </div>
-            </div>
-      
-            <div class="card level-design fade-item">
-              <div class="card-header" id="headingTwo">
-                <h3 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    <h3 class="black">Impact</h3>
-                    <h3 class="pink">$500-$999</h3>
-                  </button>
-                </h3>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body dropdown">
-                  + Hyper linked logo on UNDM's website
-                </div>
-              </div>
-            </div>
-      
-            <div class="card level-design fade-item">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    <h3 class="black">Big Red Believer</h3>
-                    <h3 class="pink">$1000-$2999</h3>
-                  </button>
-                </h3>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body dropdown">
-                  + Tickets to Miracle Talent Show
-                  + Company banner at main event
-                  + Two hour booth at main event
-                </div>
-              </div>
-            </div>
-      
-            <div class="card level-design fade-item">
-              <div class="card-header" id="headingFour">
-                <h3>
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    <h3 class="black">Husker Hero</h3>
-                    <h3 class="pink">$3000-$4900</h3>
-                  </button>
-                </h3>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body dropdown">
-                  + Personalized social media post
-                  + Check presentation
-                </div>
-              </div>
-            </div>
-      
-            <div class="card level-design fade-item">
-              <div class="card-header" id="headingFive">
-                <h3 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    <h3 class="black">Lasting Legacy</h3>
-                    <h3 class="pink">$5000+</h3>
-                  </button>
-                </h3>
-              </div>
-              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="card-body dropdown">
-                  + Speech at main event
-                  + Commercial shown at main event
-                </div>
-              </div>
-            </div>
-           
-          </div>
-          <div class="col-2"></div>
-        </div>
-       
-  
-
+<div class="container content">
 
   <div class="row">
-      <div class="col spacing">
-        <h2 style="text-align: center">On behalf of University of Nebraska Dance Marathon and Children’s Miracle
-          Network
-          Hospitals, we would like to express our appreciation for your consideration of our cause. We are looking
-          forward to working with you and your business in the future!</h2>
-      </div>
+    <h1 class="mx-auto text-center">Want to Become a Sponsor?</h1>
   </div>
 
+  <div class="row">
+    <p class="mx-auto text-center">Contact our team:</p>
+  </div>
+
+  <div class="row">
+    <a class="mx-auto text-center" href="mailto:corporate.sponsorship@unldancemarathon.com">corporate.sponsorship@unldancemarathon.com</a>
+  </div>
+
+  <br>
+
+  <div class="row mt-5" style="border-bottom: 2px solid #D3D3D3;">
+    <h2>Ways to Sponsor UNDM</h2>
+  </div>
+
+  <section class="sponsor-grid pt-0 mx-5 mt-3">
+    <div class="card-deck">
+        {% tablerow method in site.data.sponsor_methods cols:3 %}
+        <div class="fade-item card">
+            <div class="my-auto" style="position: relative;">
+              <h3>{{method.method}}</h3>
+              <div class="vertical-center-text">
+                <p>{{method.description}}</p>
+              </div>
+            </div>
+        </div>
+        {% endtablerow %}
+    </div>
+  </section>
+
+  <div class="row" style="border-bottom: 2px solid #D3D3D3;">
+    <h2>Sponsorship Levels</h2>
+  </div>
+
+  <section class="sponsor-levels pt-0 mx-5 mt-3">
+    {% tablerow level in site.data.sponsor_levels %}
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="fade-item card">
+          <div class="my-auto card-inner">
+            <div>
+              <button class="btn btn-link" type="button" class="btn toggle" data-toggle="collapse-next">
+                <h3>{{level.level}}</h3>
+                <h3>{{level.range}}</h3>
+              </button>
+            </div>
+            <div class="collapse">
+              <p class="mx-auto">{{level.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endtablerow %}
+  </section>
 
   <div class="row" style="border-bottom: 2px solid #D3D3D3;">
     <h2><br>HuskerThon 2020 Sponsors</h2>
   </div>
 
+  <div class="row mt-3">
+    <div class="col spacing">
+      <p class="text-center">On behalf of University of Nebraska Dance Marathon and Children’s Miracle Network
+        Hospitals, we would like to express our appreciation for your consideration of our cause. We are looking
+        forward to working with you and your business in the future!</h2>
+    </div>
+  </div>
 
-  <div  class="sponsor-grid">
+  <div class="sponsor-grid mt-5">
     <!--Populates grid of kids with names from sponsors.yml file in site data.-->
     <table>
       {% tablerow sponsor in site.data.sponsors cols:4 %}
-      <a href={{sponsor.link}}><img class="fade-item" style="max-height: 100px; max-width: 100px;" src={{sponsor.image}}/></a>
+      <a href={{sponsor.link}}>
+        <img class="fade-item my-3" src={{sponsor.image}}/>
+      </a>
       {% endtablerow %}
-      
-      </tr>
     </table>
   </div>
-</div>
-
 </div>
