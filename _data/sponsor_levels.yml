@@ -1,15 +1,15 @@
 - level: For The Kids
   range: $500-$999
-  description: -Opportunity to provide small promo items in bags distributed at main event <br>-Logo on main event shirt <br>-Invitation to community hour
+  description: -Attendant bag gift prize <br>-Logo on website <br>-Company name on event t-shirt <br>-Event VIP pass 
 - level: Impact
-  range: $1000-$3999
-  description: -Hyperlink logo on UNDM's website
+  range: $1000-$1999
+  description: -Newsletter advertisement <br>-Advertisement in registration packet <br>-Logo on main event shirt (size of logo commensurate with donation level)
 - level: Big Red Believer
-  range: $4000-$6999
-  description: -Tickets to Miracle Talent Show <br>-Company banner at main event <br>-Two hour booth at main event
+  range: $2000-$3999
+  description: -Tickets to miracle talent show <br>-Newsletter spotlight <br>-Company booth and banner at Huskerthon <br>-Twitter post
 - level: Husker Hero
-  range: $7000-$9999
-  description: -Personalized social media post <br>-Check presentation
+  range: $4000-$5999
+  description: -Check presentation at Huskerthon <br>-Instagram post <br>-Gift from miracle child
 - level: Lasting Legacy
-  range: $10,000+
-  description: -Speech at main event <br>-Commercial shown at main event
+  range: $6000+
+  description: -Facebook post <br>-Speech and commercial presentation at Huskerthon <br>-Company banner headlining main stage

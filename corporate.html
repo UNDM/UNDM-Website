@@ -84,11 +84,11 @@ description:
   </div>
 
   <div class="sponsor-grid mt-5">
-    <!--Populates grid of kids with names from sponsors.yml file in site data.-->
+    <!--Populates grid of sponsors with names from sponsors.yml file in site data.-->
     <table>
       {% tablerow sponsor in site.data.sponsors cols:4 %}
       <a href={{sponsor.link}}>
-        <img class="fade-item my-3" src={{sponsor.image}}/>
+        <img class="fade-item my-5" src={{sponsor.image}}/>
       </a>
       {% endtablerow %}
     </table>

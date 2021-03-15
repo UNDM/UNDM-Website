@@ -1,99 +1,30 @@
-- name: Jimmy John's
-  image: "../images/sponsors/jimmyJohnsLogo.png"
-  link: "https://www.jimmyjohns.com"
-- name: BurgerFi
-  image: "../images/sponsors/burgerfiLogo.png"
-  link: "https://burgerfi.com"
-- name: Chick Fil A
-  image: "../images/sponsors/chickFilALogo.png"
-  link: "https://chick-fil-a.com/"
-- name: Lincoln Children's Museum
-  image: "../images/sponsors/childrensMuseumLogo.jpg"
-  link: "https://www.lincolnchildrensmuseum.org/"
-- name: Chipotle
-  image: "../images/sponsors/chipotleLogo.png"
-  link: "https://www.chipotle.com/"
-- name: Complete Physical Therapy
-  image: "../images/sponsors/completePhysicalTherapy.png"
-  link: "https://completeptlincoln.com/"
-- name: Domino's Pizza
-  image: "../images/sponsors/dominosLogo.jpg"
-  link: "https://www.dominos.com/"
-- name: Hyatt Place Logo
-  image: "../images/sponsors/hyattPlaceLogo.jpg"
-  link: "https://www.hyatt.com/brands/hyatt-place"
-- name: Kissel E&S Associates
-  image: "../images/sponsors/kisselE&S.jpg"
-  link: "https://www.kisselkohoutes.com/"
-- name: Kissel Kohout
-  image: "../images/sponsors/kisselKohoutLogo.png"
-  link: "https://www.kisselkohoutes.com/"
-- name: Kohl's Logo
-  image: "../images/sponsors/kohlsLogo.png"
-  link: "https://www.kohls.com/"
-- name: Kornerbooth
-  image: "../images/sponsors/kornerboothLogo.png"
-  link: "https://photos.kornerbooth.com/Lincoln-NE-Photo-Booth"
-- name: Omaha Lancers
-  image: "../images/sponsors/lancersLogo.jpg"
-  link: "https://www.lancers.com/"
-- name: Latitude Apartments
-  image: "../images/sponsors/latitudeLogo.png"
-  link: "https://www.latitudeapartments.com/"
-- name: Lazlo's
-  image: "../images/sponsors/Lazlos.png"
-  link: "http://www.lazlosbreweryandgrill.com/"
-- name: Leadership Resources
-  image: "../images/sponsors/leadershipResourcesLogo.jpg"
-  link: "https://lrsuccess.com/"
+- name: Collins Agronomics
+  image: "../images/sponsors/noLogo.png"
+  link: "https://www.linkedin.com/in/dave-collins-ba068222/"
 - name: Love's
   image: "../images/sponsors/lovesLogo.png"
   link: "https://www.loves.com/"
-- name: University of Nebraska - Lincoln
-  image: "../images/sponsors/nebraskaLogo.png"
-  link: "https://www.unl.edu/"
-- name: Noodles and Company
-  image: "../images/sponsors/noodlesLogo.jpg"
-  link: "https://www.noodles.com/"
-- name: Oriental Trading Company
-  image: "../images/sponsors/orientalTrading.png"
-  link: "https://www.orientaltrading.com/"
-- name: OtterBox
-  image: "../images/sponsors/otterBoxLogo.png"
-  link: "https://www.otterbox.com/"
-- name: Outback Steakhouse
-  image: "../images/sponsors/outbackSteakhouseLogo.png"
-  link: "https://www.outback.com/"
-- name: Panda Express
-  image: "../images/sponsors/pandaExpressLogo.png"
-  link: "https://www.pandaexpress.com/"
-- name: Panera
-  image: "../images/sponsors/panera.jpg"
-  link: "http://panerabread.com/"
-- name: Pizza Hut
-  image: "../images/sponsors/pizzaHutLogo.png"
-  link: "https://www.pizzahut.com/"
-- name: Raising Cane's
-  image: "../images/sponsors/raisingCanesLogo.png"
-  link: "https://www.raisingcanes.com/"
-- name: UNL Residence Hall Association
-  image: "../images/sponsors/residenceHallAssociation.png"
-  link: "https://rha.unl.edu/welcome"
+- name: Union Bank & Trust
+  image: "../images/sponsors/ubtLogoNew.png"
+  link: "http://www.ubt.com/"
+- name: Taco Bell
+  image: "../images/sponsors/tbellLogo.png"
+  link: "http://www.tacobell.com/"
+- name: Bland & Associates (Bland Cares)
+  image: "../images/sponsors/blandLogo.png"
+  link: "https://blandcpa.com"
+- name: Lincoln Financial Group
+  image: "../images/sponsors/lfgLogo.png"
+  link: "https://www.lfg.com/public/individual"
+- name: Lincoln Industries
+  image: "../images/sponsors/lincolnIndustriesLogo.png"
+  link: "https://www.lincolnindustries.com"
 - name: Runza
   image: "../images/sponsors/runzaLogo.jpg"
   link: "https://www.runza.com/"
-- name: Nebraska State Museum
-  image: "../images/sponsors/stateMuseumLogo.png"
-  link: "http://museum.unl.edu/"
-- name: Omaha Storm Chasers
-  image: "../images/sponsors/stormChasersLogo.png"
-  link: "https://www.milb.com/omaha"
-- name: Topper's Pizza
-  image: "../images/sponsors/toppersLogo.png"
-  link: "https://www.toppers.com/"
-- name: Union Bank & Trust
-  image: "../images/sponsors/ubtLogo.jpg"
-  link: "http://www.ubt.com/"
-- name: Walmart
-  image: "../images/sponsors/walmartLogo.png"
-  link: "https://www.walmart.com/"
+- name: Locher Pavelka Dostal Braddy and Hammes, LLC
+  image: "../images/sponsors/llcLogo.png"
+  link: "http://www.lpdbhlaw.com"
+- name: Latitude Apartments
+  image: "../images/sponsors/latitudeLogo.png"
+  link: "https://www.latitudeapartments.com/"
