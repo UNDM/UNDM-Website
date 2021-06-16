@@ -82,11 +82,15 @@ description:
         </div>
     </section>
     <section class="family-grid mt-3">
+        {% tablerow kid in site.data.kids cols:4%}
         <div class="row"
           <div class="column"> 
             <div class="card">
                   <h2>{{kid.name}}</h2>
                   <p>{{kid.fact}}</p>
+             </div>
+           </div>
         </div>
+         {% end tablerow %}
     </section>
 </div>
