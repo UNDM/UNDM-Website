@@ -85,10 +85,10 @@ description:
         <div class="card-deck">
             {% tablerow kid in site.data.kids cols:4 %}
             <div class="fade-item card">
-                <div class="my-auto">
+                <div class="my-auto" style="position: relative;">
                   <h2>{{kid.name}}</h2>
                   <div class="vertical-center-text">
-                    <h3>{{kid.fact}}</h3>
+                    <p>{{kid.fact}}</p>
                   </div>
                 </div>
             </div>
