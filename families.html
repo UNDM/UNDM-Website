@@ -84,11 +84,11 @@ description:
     <section class="family-grid mt-3">
         <div class="card-deck">
             {% tablerow kid in site.data.kids cols:4 %}
-            <div class="no fade-item card">
+            <div class="fade-item card">
                 <div class="my-auto" style="position: relative;">
                   <h2>{{kid.name}}</h2>
                   <div class="vertical-center-text">
-                    <p>{{kid.fact}}</p>
+                    <h2>{{kid.fact}}</h2>
                   </div>
                 </div>
             </div>
