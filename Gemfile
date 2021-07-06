@@ -9,6 +9,9 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag', '2.4.0'
   gem 'jekyll-sitemap', '1.2.0'
   gem 'jekyll-autoprefixer'
-  gem 'mini_racer'
   gem "kramdown-parser-gfm"
+end
+
+group :production do
+  gem 'mini_racer'
 end
