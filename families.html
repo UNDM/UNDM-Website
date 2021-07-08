@@ -82,17 +82,17 @@ description:
         </div>
     </section>
     <section class="family-grid mt-3">
-        <div class="card-deck">
-            {% tablerow kid in site.data.kids cols:4 %}
-            <div class="fade-item card">
-                <div class="my-auto" style="position: relative;">
+        {% tablerow kid in site.data.kids cols:4 %}
+           <div class="card">
+               <width="100">
+                <div class="card-header">
                   <h2>{{kid.name}}</h2>
-                  <div class="vertical-center-text">
-                    <p>{{kid.fact}}</p>
-                  </div>
-                </div>
-            </div>
-            {% endtablerow %}
+                 <div class="vertical-center-text">
+                   <p>{{kid.fact}}</p>
+                 </div>
+               </div>
+           </div>
+           {% endtablerow %}
         </div>
     </section>
 </div>
