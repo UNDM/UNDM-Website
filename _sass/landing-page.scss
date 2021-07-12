@@ -29,6 +29,12 @@
 .overlay h1 {
 	color: white;
 }
+
+.overlay a {
+	padding: 50px;
+	font-weight: bolder;
+}
+
 .what-is-dm {
 	padding: 50px;
 	max-width: 800px;
@@ -44,6 +50,11 @@
 
 	h2 {
 		margin-bottom: 50px;
+	}
+	b {
+		font-size: xx-large;
+		font-weight: bolder;
+		font-style: oblique;
 	}
 }
 
