@@ -31,7 +31,8 @@
 }
 
 .overlay a {
-	padding: 150px;
+	padding: 50px;
+	font-weight: bolder;
 }
 
 .what-is-dm {
@@ -49,6 +50,11 @@
 
 	h2 {
 		margin-bottom: 50px;
+	}
+	b {
+		font-size: xx-large;
+		font-weight: bolder;
+		font-style: oblique;
 	}
 }
 
