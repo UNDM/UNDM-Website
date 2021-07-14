@@ -1,22 +1,36 @@
 .blog-posts {
 	list-style: none;
+	@extend %flexbox;
+	@include flex-flow(wrap);
 	padding: 0;
 
 	li {
-		margin: 100px 0;
+		margin: 25px 0;
 	}
 }
 
 .blog-post {
+	padding: 30px 20px;
+		box-sizing: border-box;
+		width: 100%;
+
+		@media #{$tablet} {
+			@include flex(1, 1, 45%);
+		}
+
+		@media #{$desktop} {
+			@include flex(1, 1, 29%);
+		}
+
 	.author {
-		padding: 30px 0 0 0;
+		padding: 20px 0 0 0;
 		border: 1px solid #eee;
-		margin: 30px 0;
+		margin: 20px 0;
 		font-size: .8em;
 
 		.square-image {
-			width: 125px;
-			height: 125px;
+			width: 120px;
+			height: 120px;
 			margin-top: 0;
 		}
 		.blurb {
@@ -30,7 +44,7 @@
 			color: #000;
 			text-decoration: none;
 			font-weight: normal;
-			font-size: 1.3em;
+			font-size: .9em;
 		}
 	}
 
@@ -39,7 +53,7 @@
 	}
 
 	.blog-navigation {
-		font-size: 14px;
+		font-size: 11px;
 		display: block;
 		width: auto;
 		overflow: hidden;
@@ -57,7 +71,7 @@
 
 	.post-details {
 		border-bottom: 1px solid #eee;
-		font-size: .9em;
+		font-size: .7em;
 
 		.blog-filter {
 			display: inline-block;
@@ -79,7 +93,7 @@
 
 		&:after {
 			content: "";
-			display: table;
+			display: box;
 			clear: both;
 		}
 	}
