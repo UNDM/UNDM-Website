@@ -27,7 +27,7 @@
 }
 
 .overlay h1 {
-	color: white;
+	color:rgb(255, 188, 64) ;
 }
 
 .overlay a {
@@ -43,7 +43,7 @@
 
 .bottom-cta {
 	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%);
-	color: #fff;
+	color:rgb(255, 188, 64);
 	text-align: center;
 	margin: 0;
 	padding: 100px 0;
@@ -87,7 +87,7 @@
 
 .posts {
 	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%);
-	color: white;
+	color: rgb(255, 188, 64);
 	text-align: center;
 	padding: 50px;
 

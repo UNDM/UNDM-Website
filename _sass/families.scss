@@ -30,7 +30,7 @@
     max-width: 1250px;
     padding: 10px;
     margin-bottom: 5vh;
-    background-color: #d3d3d3;
+    background-color: #db3333;
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -43,7 +43,7 @@
       overflow: hidden;
       background-size: cover;
       background-position: center;
-      border: 6px solid #db3333;
+      border: 6px solid #FFBC40;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       border-radius: 50%;
       -webkit-border-radius: 50%;
@@ -94,12 +94,12 @@
 	@include flex-flow(wrap);
   align-items: center;
   justify-content: center;
-  .card-deck {
+  .card {
     .card {
       min-width: calc(25% - 30px);
       margin: 15px;
       padding: 10px;
-      background-color: #d3d3d3;
+      background-color: #db3333;
       border-radius: 5px; /* 5px rounded corners */
       box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
       transition: all .5s;
