@@ -19,10 +19,10 @@
   new_window: false
   highlight: false
 - name: Register
-  link: https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=3976
+  link: https://events.dancemarathon.com/index.cfm?fuseaction=donordrive.event&eventID=4589
   new_window: true
   highlight: true
 - name: Donate
-  link: https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.donate&eventID=3976
+  link: https://events.dancemarathon.com/index.cfm?fuseaction=donordrive.event&eventID=4589
   new_window: true
   highlight: true
