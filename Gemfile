@@ -10,8 +10,7 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', '1.2.0'
   gem 'jekyll-autoprefixer'
   gem "kramdown-parser-gfm"
-end
-
-group :production do
-  gem 'mini_racer'
+  gem 'tzinfo', '1.2.3'
+  gem 'tzinfo-data', '1.2017.2'
+  gem 'mini_racer', platforms: :ruby
 end

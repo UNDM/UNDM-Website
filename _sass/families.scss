@@ -90,6 +90,10 @@
 }
 
 .family-grid {
+  @extend %flexbox;
+	@include flex-flow(wrap);
+  align-items: center;
+  justify-content: center;
   .card-deck {
     .card {
       min-width: calc(25% - 30px);
