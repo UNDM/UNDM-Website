@@ -1,36 +1,69 @@
-.staff {
-	padding: 0;
-	list-style: none;
-	@extend %flexbox;
-	@include flex-flow(wrap);
-	text-align: center;
-	li {
-		padding: 30px 20px;
-		box-sizing: border-box;
-		width: 100%;
-
-		@media #{$tablet} {
-			@include flex(1, 1, 45%);
-		}
-
-		@media #{$desktop} {
-			@include flex(1, 1, 29%);
-		}
-
-	}
-
-	.exec-image {
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 200px;
-	}
-
-	.name {
-		font-size: 1.3em;
-		margin-top: 20px;
-	}
-
-	.position {
-		color: #666;
-	}
+$VPContainerHeight: 500px;
+$SubCommitteeHeight:$VPContainerHeight * 1.5;
+@media screen and (min-width: 700px) {
+.exec-page-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.exec-page-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+} 
+.exec-container{
+    display:grid;
+    max-width: 1200px;
+    justify-content: center;
+}
+.vp-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-height: $VPContainerHeight + 80px;
+    overflow:hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.subcommittee-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow:hidden;
+}
+.subcommittee-cell{
+     display: grid;
+     grid-template-rows: 3fr 2fr;
+     overflow:hidden;
+     height:100%;
+     margin: 5%;
+}
+.twoRowSubCommittee{
+    max-height: 2* $SubCommitteeHeight;
+}
+.threeRowSubCommittee{
+    max-height: 3* $SubCommitteeHeight;
+}
+.center-content-holder{
+    display:flex;
+    justify-content: center;
+}
+.vp-image-container{
+    margin:5%;
+}
+.subcommittee-image{
+    margin-bottom: 5%;
+}
+}
+@media screen and (max-width: 700px) {
+    .vp-grid{
+        margin:5%;
+    }
+    .subcommittee-cell{
+        margin: 5%;
+   }
+}
+.areaDivider{
+    width: 100%;
+    height: 0px;
+    border-bottom: 5px solid #c61f4a;
 }
