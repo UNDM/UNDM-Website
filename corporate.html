@@ -31,7 +31,7 @@ description:
   </div>
 
   <section class="sponsor-grid pt-0 mx-5 mt-3">
-    <div class="card-deck">
+    <div class="container">
         {% tablerow method in site.data.sponsor_methods cols:3 %}
         <div class="fade-item card">
             <div class="my-auto" style="position: relative;">
@@ -56,9 +56,10 @@ description:
         <div class="fade-item card">
           <div class="my-auto card-inner">
             <div>
-              <button class="btn btn-link" type="button" class="btn toggle" data-toggle="collapse-next">
+              
                 <h3>{{level.level}}</h3>
                 <h3>{{level.range}}</h3>
+              </p>{{level.description}}</p>
               </button>
             </div>
             <div class="collapse">

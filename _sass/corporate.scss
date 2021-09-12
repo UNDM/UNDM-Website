@@ -49,7 +49,7 @@
     } 
   }
 
-  .card-deck {
+  .container {
     .card {
       min-width: calc(33% - 30px);
       margin: 15px;
@@ -68,18 +68,8 @@
         justify-content:center;
         transition: height .7s, opacity .5s;
       }
-    }
-    .card:hover {
-      min-width: calc(33% - 30px);
-      margin: 15px;
-      padding: 10px;
-      background-color:rgb(255, 188, 64) ;
-      border-color: #db3333;
-      border-radius: 5px; /* 5px rounded corners */
-      box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
-
       .vertical-center-text {
-        height: 215px; /* TODO This could be fixed to scale to the height needed (instead of a constant) */
+        height: 115px; /* TODO This could be fixed to scale to the height needed (instead of a constant) */
         opacity: 1;
         display: flex;
         margin: auto;
