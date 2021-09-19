@@ -12,26 +12,48 @@
 }
 
 .sponsor-levels {
-  .card {
-    width: 100%;
-    margin: 15px;
-    padding: 10px;
-    background-color: rgb(255, 188, 64); 
-    border-radius: 5px; /* 5px rounded corners */
-    box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
-    transition: all .5s;
+  @extend %flexbox;
+	@include flex-flow(wrap);
+  align-items: center;
+  justify-content: center;
+  .card-deck {
+    .card {
+      min-width: calc(25% - 30px);
+      margin: 15px;
+      padding: 10px;
+      background-color: rgb(255, 188, 64);
+      border-radius: 5px; /* 5px rounded corners */
+      box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+      transition: all .5s;
 
-    .card-inner {
-      h3 {
-        color: black;
-      }
-  
-      p {
-        width: 60%;
-        color: #131313
+      .vertical-center-text {
+        height: 0;
+        opacity: 0;
+        display: flex;
+        margin: auto;
+        align-items:center;
+        justify-content:center;
+        transition: height .7s, opacity .5s;
       }
     }
+    .card:hover {
+      min-width: calc(25% - 30px);
+      margin: 15px;
+      padding: 10px;
+      background-color: rgb(255, 188, 64);
+      border-color: #db3333;
+      border-radius: 5px; /* 5px rounded corners */
+      box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
 
+      .vertical-center-text {
+        height: 200px; /* TODO This could be fixed to scale to the height needed (instead of a constant) */
+        opacity: 1;
+        display: flex;
+        margin: auto;
+        align-items:center;
+        justify-content:center;
+      }
+    }
   }
 }
 

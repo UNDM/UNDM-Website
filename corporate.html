@@ -50,26 +50,19 @@ description:
   </div>
 
   <section class="sponsor-levels pt-0 mx-5 mt-3">
-    {% tablerow level in site.data.sponsor_levels %}
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
+    <div class="card-deck">
+        {% tablerow level in site.data.sponsor_levels cols:3 %}
         <div class="fade-item card">
-          <div class="my-auto card-inner">
-            <div>
-              
-                <h3>{{level.level}}</h3>
-                <h3>{{level.range}}</h3>
-              </p>{{level.description}}</p>
-              </button>
+            <div class="my-auto" style="position: relative;">
+              <h3>{{level.level}}</h3>
+              <h3>{{level.range}}</h3>
+              <div class="vertical-center-text">
+                <p>{{level.description}}</p>
+              </div>
             </div>
-            <div class="collapse">
-              <p class="mx-auto">{{level.description}}</p>
-            </div>
-          </div>
         </div>
-      </div>
+        {% endtablerow %}
     </div>
-    {% endtablerow %}
   </section>
 
   <div class="row" style="border-bottom: 2px solid #D3D3D3;">
