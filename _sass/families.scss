@@ -1,3 +1,98 @@
+$VPContainerHeight: 500px;
+$SubCommitteeHeight:$VPContainerHeight * 1.5;
+
+@media screen and (min-width: 700px) {
+  .exec-page-image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden
+  }
+  .exec-page-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+  } 
+  .exec-container{
+      display:grid;
+      max-width: 1200px;
+      justify-content: center;
+  }
+  .values-container{
+      display: block;
+      max-width: 1200px;
+      justify-content: center;
+  }
+  .vp-grid{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      max-height: $VPContainerHeight + 80px;
+      overflow:hidden;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+  .subcommittee-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      overflow:hidden;
+  }
+  .subcommittee-cell{
+       display: grid;
+       grid-template-rows: 3fr 2fr;
+       overflow:hidden;
+       height:100%;
+       margin: 5%;
+  }
+  .purpose-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      overflow:hidden;
+  }
+  .purpose-cell{
+       display: grid;
+       grid-template-rows: 1fr 4fr;
+       overflow:hidden;
+       height:100%;
+       margin: 5%;
+  }
+  .twoRowSubCommittee{
+      max-height: 2* $SubCommitteeHeight;
+  }
+  .threeRowSubCommittee{
+      max-height: 3* $SubCommitteeHeight;
+  }
+  .center-content-holder{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .vp-image-container{
+      margin:5%;
+  }
+  .subcommittee-image{
+      margin-bottom: 5%;
+  }
+  
+}
+@media screen and (max-width: 700px) {
+  .vp-grid{
+    margin:5%;
+  }
+  .subcommittee-cell{
+    margin: 5%;
+  }
+  .purpose-text-card{
+    margin: 100% 0% 40% -100%;
+  }
+}
+
+.areaDivider{
+    width: 100%;
+    height: 0px;
+    border-bottom: 5px solid #c61f4a;
+}
+
 .families-head {
   display: flex;
   flex-direction: column;

@@ -41,6 +41,9 @@ description:
         {% include forms/kiddo-letter.html%}
         {% endif %}
     </div>
+</div>
+
+<div class="center-content-holder">
     <section class="families">
         <div id="familyCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -56,43 +59,53 @@ description:
             </script>
         </div>
     </section>
-    <section class="family-cards row">
-        <div class="container">
-            {% for story in site.data.stories %}
-            <div class="fade-item row family-card mx-auto">
-                <div class="row mb-0 px-2">
-                    <div class="col-md-auto my-auto">
-                        <div class="family-card-image">
-                            <img src="{{ story.image }}"/>
-                        </div>
-                    </div>
-                    <div class="col my-auto">
-                        <div class="row my-0">
-                            <h1>{{ story.name }}</h1>
-                        </div>
-                        <div class="row mb-0">
-                            <h4>
-                                {{ story.story }}
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </section>
-    <section class="family-grid mt-3">
-        {% tablerow kid in site.data.kids cols:4 %}
-           <div class="card">
-               <width="100">
-                <div class="card-header">
-                  <h2>{{kid.name}}</h2>
-                 <div class="vertical-center-text">
-                   <p>{{kid.fact}}</p>
-                 </div>
+	<div class="exec-container">
+        <div class="subcommittee-grid threeRowSubCommittee">
+			<div class="subcommittee-cell">
+				<div class="exec-page-image subcommittee-image">
+					<img src="../images/kids/marlys.jpg">
+				</div>
+				<div>
+					<p>Marlys</p>
+					<div>Marlys suffers from Zygomycosis, BPD, and pulmonary hypertension. Despite being born at 25 weeks, and being given a 20% chance to live, Marlys is now three years old! Her team at Children's has become like family!</div>
+				</div>
+			</div>
+			<div class="subcommittee-cell">
+				<div class="exec-page-image subcommittee-image">
+					<img src="../images/kids/zalyn.jpg">
+				</div>
+				<div>
+					<p>Zalyn</p>
+					<div>Zalyn was born with Trisomy 18 (Edward's Syndrome). Only 5 out of 100 children with Edward's Syndrome make it to birth, and only 1 of those 5 children will make it to their first birthday. Zalyn is now five and a half years old! He loves paw patrol, swimming, and playing outside.</div>
+				</div>
+			</div>
+			<div class="subcommittee-cell">
+				<div class="exec-page-image subcommittee-image">
+					<img src="../images/kids/milly.jpg">
+				</div>
+				<div>
+					<p>Milly</p>
+					<div>Milly has dealt with pulmonary hypoplasia and several other conditions in her life. Despite hearing loss brought on by complications with her lungs, Milly has a beautiful singing voice and was named the National Miracle Child in 2017!</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div>
+        <section class="family-grid mt-3">
+            {% tablerow kid in site.data.kids cols:4 %}
+               <div class="card">
+                   <width="100">
+                    <div class="card-header">
+                      <h2>{{kid.name}}</h2>
+                     <div class="vertical-center-text">
+                       <p>{{kid.fact}}</p>
+                     </div>
+                   </div>
                </div>
-           </div>
-           {% endtablerow %}
-        </div>
-    </section>
+               {% endtablerow %}
+            </div>
+        </section>
+    </div>
 </div>
+
+
