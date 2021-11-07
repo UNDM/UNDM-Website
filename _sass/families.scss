@@ -11,7 +11,7 @@ $SubCommitteeHeight:$VPContainerHeight * 1.5;
   .exec-page-image img {
       max-width: 100%;
       max-height: 100%;
-      object-fit: cover;
+      object-fit: unset;
   } 
   .exec-container{
       display:grid;
