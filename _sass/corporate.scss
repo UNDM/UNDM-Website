@@ -21,9 +21,9 @@
       min-width: calc(25% - 30px);
       margin: 15px;
       padding: 10px;
-      background-color: rgb(255, 188, 64);
+      background-color: rgb(245, 245, 245);
       border-radius: 5px; /* 5px rounded corners */
-      box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px 0px rgba(255,188,64,.8);
       transition: all .5s;
 
       .vertical-center-text {
@@ -40,10 +40,10 @@
       min-width: calc(25% - 30px);
       margin: 15px;
       padding: 10px;
-      background-color: rgb(255, 188, 64);
+      background-color: rgb(245, 245, 245);
       border-color: #db3333;
       border-radius: 5px; /* 5px rounded corners */
-      box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px 4px rgba(255, 188, 64, .8);
 
       .vertical-center-text {
         height: 200px; /* TODO This could be fixed to scale to the height needed (instead of a constant) */
@@ -76,9 +76,9 @@
       min-width: calc(33% - 30px);
       margin: 15px;
       padding: 10px;
-      background-color:rgb(255, 188, 64) ;
+      background-color:rgb(245, 245, 245) ;
       border-radius: 5px; /* 5px rounded corners */
-      box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px 0px rgba(255, 188, 64, .8);
       transition: all .5s;
 
       .vertical-center-text {
@@ -147,9 +147,9 @@
       width: 100%;
       margin: 15px;
       padding: 5px;
-      background-color: rgb(255, 188, 64); 
+      background-color: rgb(245, 245, 245); 
       border-radius: 5px; /* 5px rounded corners */
-      box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px 0px rgba(255, 188, 64, .8);
       transition: all .5s;
   
       .card-inner {
