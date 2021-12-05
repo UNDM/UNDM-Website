@@ -20,6 +20,15 @@
 .nav-container {
 	display: flex;
 	flex-flow: nowrap row;
+	
+}
+.main-nav-container{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	@media screen and (min-width: 1500px) {
+		width: 80%;
+	}
 }
 
 header {

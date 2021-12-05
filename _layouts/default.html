@@ -41,54 +41,39 @@
 		</script>
 	</head>
 	<body>
-		<header>
-			<div class="container">
+		<header class='top-header'>
+			<div class='main-nav-container'>
 				<div class="nav-container">
-					<a class="single_line" href="{{ site.baseurl }}/" style="position: relative; z-index: 1;">
-						<img alt="UNDM Logo" src="../images/logos/flame_one_line.png" width="25%" height="auto" style="max-width: 500px;">
-					</a>
-					<a class="two_lines" href="{{ site.baseurl }}/" style="position: relative; z-index: 1;">
-						<img alt="UNDM Logo" src="../images/logos/flame_words_bold.png" width="5%" height="auto" style="max-width: 160px;">
-					</a>
 					<a class="flame" href="{{ site.baseurl }}/" style="position: relative; z-index: 1;">
 						<img alt="UNDM Logo" src="../images/logos/flameLogo.png" width="5%" height="auto" style="max-width: 23px;">
 					</a>
+					<a class="title-text" href="{{ site.baseurl }}/" style="position: relative; z-index: 1;"><p style="font-size: 2em;color: black; font-weight: bold; padding-left: 10px;">University of Nebraska Dance Marathon</p></a>
+					<a class="small-title-text" href="{{ site.baseurl }}/" style="position: relative; z-index: 1;"><p style="font-size: 2em;color: black; font-weight: bold; padding-left: 10px;">UNDM</p></a>
 
 					{% include navigation.html %}
 				</div>
 			</div>
 			<style>
-				@media only screen and (max-width: 1200px) and (min-width: 901px) {
-					.single_line {
-						display: none;
-					}
-					.two_lines {
+				@media only screen and (min-width:1200px) {
+					.flame {
 						display: block;
 					}
-					.flame {
-						display: none;
+					.title-text{
+						display: block;
+					}
+					.small-title-text{
+						display:none;
 					}
 				}
-				@media only screen and (min-width: 1201px) {
-					.single_line {
+				@media only screen and (max-width: 1199px) {
+					.small-title-text{
 						display: block;
-					}
-					.two_lines {
-						display: none;
-					}
-					.flame {
-						display: none;
-					}
-				}
-				@media only screen and (max-width: 900px) {
-					.single_line {
-						display: none;
-					}
-					.two_lines {
-						display: none;
 					}
 					.flame {
 						display: block;
+					}
+					.title-text{
+						display: none;
 					}
 				}
 			</style>
