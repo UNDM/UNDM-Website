@@ -36,9 +36,9 @@
 }
 
 .what-is-dm {
-	padding: 50px;
-	max-width: 800px;
 	margin: auto;
+	width:60%;
+	text-align: center;
 }
 
 .bottom-cta {
@@ -47,6 +47,7 @@
 	text-align: center;
 	margin: 0;
 	padding: 100px 0;
+	width: 100%;
 
 	h2 {
 		margin-bottom: 50px;
@@ -206,4 +207,10 @@
 		align-items: center;
 		justify-content: center;
 	}
+}
+.picture-divider{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+	max-height: 500px;
 }
