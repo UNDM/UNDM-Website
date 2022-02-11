@@ -80,6 +80,7 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2017.2)
       tzinfo (>= 1.0.0)
+    webrick (1.7.0)
 
 PLATFORMS
   ruby
@@ -98,6 +99,7 @@ DEPENDENCIES
   mini_racer
   tzinfo (= 1.2.3)
   tzinfo-data (= 1.2017.2)
+  webrick (~> 1.7)
 
 BUNDLED WITH
    2.1.4

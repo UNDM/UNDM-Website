@@ -1,30 +1,41 @@
-- name: Collins Agronomics
-  image: "../images/sponsors/collinsLogo.png"
-  link: "https://www.linkedin.com/in/dave-collins-ba068222/"
+
+- name: Chick Fil A 48th and O
+  image: "../images/sponsors/2022Sponsors/ChickFilA48th.jpg"
+  link: "https://www.chick-fil-a.com/locations/ne/48th-o-street"
+- name: Chick Fil A
+  image: "../images/sponsors/2022Sponsors/ChickFilALogo.jpg"
+  link: "https://www.chick-fil-a.com/"
 - name: Love's
   image: "../images/sponsors/lovesLogo.png"
   link: "https://www.loves.com/"
 - name: Union Bank & Trust
-  image: "../images/sponsors/ubtLogoNew.png"
+  image: "../images/sponsors/2022Sponsors/UBT-Logo-Master-YBH-Color.jpg"
   link: "http://www.ubt.com/"
-- name: Taco Bell
-  image: "../images/sponsors/tbellLogo.png"
-  link: "http://www.tacobell.com/"
-- name: Bland & Associates (Bland Cares)
-  image: "../images/sponsors/blandLogo.png"
-  link: "https://blandcpa.com"
-- name: Lincoln Financial Group
-  image: "../images/sponsors/lfgLogo.png"
-  link: "https://www.lfg.com/public/individual"
-- name: Lincoln Industries
-  image: "../images/sponsors/lincolnIndustriesLogo.png"
-  link: "https://www.lincolnindustries.com"
-- name: Runza
-  image: "../images/sponsors/runzaLogo.jpg"
-  link: "https://www.runza.com/"
-- name: Locher Pavelka Dostal Braddy and Hammes, LLC
-  image: "../images/sponsors/llcLogo.png"
-  link: "http://www.lpdbhlaw.com"
-- name: Latitude Apartments
-  image: "../images/sponsors/latitudeLogo.png"
-  link: "https://www.latitudeapartments.com/"
+- name: Dairy Queen
+  image: "../images/sponsors/2022Sponsors/DairyQueen.png"
+  link: "https://www.dairyqueen.com/en-us/"
+- name: 3D Nutrition Wellness
+  image: "../images/sponsors/2022Sponsors/NutritionWellness.jpeg"
+  link: "https://www.3dnebraska.com/"
+- name: LivRed
+  image: "../images/sponsors/2022Sponsors/LivRedLogo.png"
+  link: "https://livred.com/"
+- name: Nelnet
+  image: "../images/sponsors/2022Sponsors/Nelnet_Logo_Color_Small.png"
+  link: "https://www.nelnet.com/welcome"
+- name: Pink Gorilla Events
+  image: "../images/sponsors/2022Sponsors/PinkGorillaEvents.png"
+  link: "https://www.pinkgorillaevents.com/"
+- name: Put A Finger Down
+  image: "../images/sponsors/2022Sponsors/PutAFingerDown.png"
+  link: ""
+- name: Sam's Club
+  image: "../images/sponsors/2022Sponsors/Sams-Club-Logo-PNG1.png"
+  link: "https://www.samsclub.com/"
+- name: Toppers Pizza
+  image: "../images/sponsors/2022Sponsors/Toppers_DTG_red.jpg"
+  link: "https://www.toppers.com/"
+- name: Bagels and Joe
+  image: "../images/sponsors/2022Sponsors/BagelsAndJoe.JPG"
+  link: "https://bagelsandjoe.com/"
+  

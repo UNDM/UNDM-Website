@@ -14,3 +14,4 @@ group :jekyll_plugins do
   gem 'tzinfo-data', '1.2017.2'
   gem 'mini_racer', platforms: :ruby
 end
+gem "webrick", "~> 1.7"
