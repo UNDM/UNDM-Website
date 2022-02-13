@@ -36,11 +36,7 @@ $SubCommitteeHeight:$VPContainerHeight * 1.5;
       grid-template-columns: 1fr 1fr 1fr;
       overflow:hidden;
   }
-  .subcommittee-cell{
-       display: grid;
-       grid-template-rows: 3fr 2fr;
-       overflow:hidden;
-       height:100%;
+  .kid-cell{
        margin: 5%;
   }
   .purpose-grid{
@@ -54,12 +50,6 @@ $SubCommitteeHeight:$VPContainerHeight * 1.5;
        overflow:hidden;
        height:100%;
        margin: 5%;
-  }
-  .twoRowSubCommittee{
-      max-height: 2* $SubCommitteeHeight;
-  }
-  .threeRowSubCommittee{
-      max-height: 3* $SubCommitteeHeight;
   }
   .center-content-holder{
       display:flex;
