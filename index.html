@@ -150,15 +150,18 @@ description: University of Nebraska-Lincoln Dance Marathon. We dance for those w
 			</script>
 			</div>
 			</div>
-		<div class="post-container fade-item">
-		{% for post in site.posts limit:3%}
-			<div class="post">
-				<a href="{{ post.url }}">
-					<h3>{{ post.title }}</h3>
-					<p>{{ post.excerpt | strip_html | strip_newlines | truncate: 100 }}</p>
-				</a>
+	</section>
+	<section style="text-align: center; display: flex; justify-content: center;align-items: center;">
+		<div style="width:80%">
+			<h1><b>More From Dance Marathon</b></h1>
+			<div class="image-gallery">
+				<div class="gallery-image"><img src="images/families/families7.jpg" style="height: 400px;"></div>
+				<div class="gallery-image"><img src="images/families/families2.jpg" style="height: 400px;"></div>
+				<div class="gallery-image"><img src="images/families/families3.jpg" style="height: 400px;"></div>
+				<div class="gallery-image"><img src="images/families/families4.jpg" style="height: 400px;"></div>
+				<div class="gallery-image"><img src="images/families/families5.jpg" style="height: 400px;"></div>
+				<div class="gallery-image"><img src="images/families/families6.jpg" style="height: 400px;"></div>
 			</div>
-		{% endfor %}
 		</div>
 	</section>
 
