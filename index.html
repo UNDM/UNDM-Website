@@ -43,7 +43,7 @@ description: University of Nebraska-Lincoln Dance Marathon. We dance for those w
 	<div style="display: flex; justify-content: center; align-items: center;">
 	<section class="bottom-cta">
 		<h1 id="demo"></h1>
-		<h1>We can't wait to see you February 26, 2022</h1>
+		<h1>We can't wait to see you February 25, 2023</h1>
 		<h1>Countdown to HuskerThon</h1>
 		<h1></h1>
 		<div class="container">
@@ -75,7 +75,7 @@ description: University of Nebraska-Lincoln Dance Marathon. We dance for those w
 
 			<script>
 				// Set the date we're counting down to
-				var countDownDate = new Date("February 26, 2022 10:00:00").getTime();
+				var countDownDate = new Date("February 25, 2023 10:00:00").getTime();
 
 				// Update the count down every 1 second
 				var x = setInterval(function() {
@@ -103,6 +103,17 @@ description: University of Nebraska-Lincoln Dance Marathon. We dance for those w
 				if (distance < 0 && distance > (-1000 * 60 * 60 * 12)) {
 					clearInterval(x);
 					document.getElementById("demo").innerHTML = "Time to dance!";
+					days = 0;
+					hours = 0;
+					minutes = 0;
+					seconds = 0;
+
+					// Display the result in the element with id="demo"
+
+					document.getElementById("days").innerHTML = days;
+					document.getElementById("hours").innerHTML = hours;
+					document.getElementById("minutes").innerHTML = minutes;
+					document.getElementById("seconds").innerHTML = seconds;
 				}
 				else if (distance < (-1000 * 60 * 60 * 12)) {
 					clearInterval(x);
