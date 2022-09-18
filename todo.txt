@@ -2,3 +2,8 @@
 Corporate Sponsor Text Clip
 Countdown Auto Reset
 Automatic Picture Resizing
+Fix display of home screen gif and get involved button
+Fix photo aspect ratio at bottom 
+Update this years team to the website
+Remove blog but keep in code
+Add emails and contact info to contact page
