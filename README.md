@@ -3,7 +3,12 @@
 # UNDM Website
 
 This is the new site for UNL Dance Marathon. This readme has information on the initial thoughts of the contents of the site and is meant to guide its development. 
+## Ubuntu Setup
+Run the following Command before execeuting bundle install
+sudo apt install ruby-full
 
+If bundle install has issues, 
+run sudo apt install ruby-bundler
 ## Develop
 
 Hydra was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
