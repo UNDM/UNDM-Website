@@ -1,4 +1,8 @@
-
-Corporate Sponsor Text Clip
+Update looks of navbar and make sure it looks good on mobile
+Update look of front page welcome gif and button
+Update images on home page to have the proper aspect ratio
+Update 2023 Huskerthon Date
+Remove Blog
+Fix Corporate Sponsor Text Clip
 Countdown Auto Reset
 Automatic Picture Resizing
