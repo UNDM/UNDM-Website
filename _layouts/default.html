@@ -44,50 +44,41 @@
 		<header>
 			<div class="container">
 				<div class="nav-container">
-					<a class="single_line" href="{{ site.baseurl }}/" style="position: relative; z-index: 1;">
+
+					<!-- <a class="single_line" href="{{ site.baseurl }}/" style="position: relative; z-index: 1;">
 						<img alt="UNDM Logo" src="../images/logos/flame_one_line.png" width="25%" height="auto" style="max-width: 500px;">
 					</a>
 					<a class="two_lines" href="{{ site.baseurl }}/" style="position: relative; z-index: 1;">
 						<img alt="UNDM Logo" src="../images/logos/flame_words_bold.png" width="5%" height="auto" style="max-width: 160px;">
-					</a>
+					</a> -->
 					<a class="flame" href="{{ site.baseurl }}/" style="position: relative; z-index: 1;">
 						<img alt="UNDM Logo" src="../images/logos/flameLogo.png" width="5%" height="auto" style="max-width: 23px;">
 					</a>
+					<a class="flame-with-UNDM" href="{{ site.baseurl }}/" style="position: relative; z-index: 1;">
+						<img alt="UNDM Logo" src="../images/logos/smallLogoWhite.png" style="max-height: 37px;">
+					</a>
+					<a class="undm-text" href="{{ site.baseurl }}/" style="position: relative; z-index: 1; margin-block: auto; margin-left: 10px;">University of Nebraska Dance Marathon</a>
 
 					{% include navigation.html %}
 				</div>
 			</div>
 			<style>
-				@media only screen and (max-width: 1200px) and (min-width: 901px) {
-					.single_line {
-						display: none;
-					}
-					.two_lines {
+				@media only screen and (min-width: 992px) {
+					.undm-text {
 						display: block;
 					}
-					.flame {
+					.flame-with-UNDM {
 						display: none;
 					}
 				}
-				@media only screen and (min-width: 1201px) {
-					.single_line {
-						display: block;
-					}
-					.two_lines {
+				@media only screen and (max-width: 992px) {
+					.undm-text {
 						display: none;
 					}
 					.flame {
 						display: none;
 					}
-				}
-				@media only screen and (max-width: 900px) {
-					.single_line {
-						display: none;
-					}
-					.two_lines {
-						display: none;
-					}
-					.flame {
+					.flame-with-UNDM {
 						display: block;
 					}
 				}

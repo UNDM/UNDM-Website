@@ -31,8 +31,11 @@
 }
 
 .overlay a {
-	padding: 50px;
-	font-weight: bolder;
+	padding: 30px;
+	background-color: #ffbc40;
+	border: none;
+	text-transform: uppercase;
+	// color: white;
 }
 
 .what-is-dm {
@@ -251,6 +254,11 @@
 	}
 	.gallery-image{
 		padding:25px;
+	}
+	.gallery-image img{
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
 	}
 }
 @media (max-width:600px){
